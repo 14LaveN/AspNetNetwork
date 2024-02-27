@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AspNetNetwork.Application\AspNetNetwork.Application.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Attendee\AspNetNetwork.Database.Attendee.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Common\AspNetNetwork.Database.Common.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Invitation\AspNetNetwork.Database.Invitation.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Domain.Common\AspNetNetwork.Domain.Common.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Events.Attendee\AspNetNetwork.Events.Attendee.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.RabbitMq\AspNetNetwork.RabbitMq.csproj" />
+    </ItemGroup>
+
+</Project>

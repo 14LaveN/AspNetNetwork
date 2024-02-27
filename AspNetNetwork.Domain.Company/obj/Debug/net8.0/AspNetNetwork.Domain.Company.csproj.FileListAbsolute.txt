@@ -1,0 +1,17 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\AspNetNetwork.Domain.Company.deps.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\AspNetNetwork.Domain.Company.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\AspNetNetwork.Domain.Company.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\refint\AspNetNetwork.Domain.Company.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\ref\AspNetNetwork.Domain.Company.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\AspNetNetwork.Domain.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\AspNetNetwork.Domain.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\AspNetNetwork.Domain.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\AspNetNetwork.Domain.Identity.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.csproj.AssemblyReference.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.csproj.CopyComplete

@@ -1,0 +1,12 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\bin\Debug\net8.0\AspNetNetwork.Email.deps.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\bin\Debug\net8.0\AspNetNetwork.Email.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\bin\Debug\net8.0\AspNetNetwork.Email.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.csproj.AssemblyReference.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\refint\AspNetNetwork.Email.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\ref\AspNetNetwork.Email.dll

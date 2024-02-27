@@ -1,0 +1,12 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\bin\Debug\net8.0\AspNetNetwork.Cache.deps.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\bin\Debug\net8.0\AspNetNetwork.Cache.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\bin\Debug\net8.0\AspNetNetwork.Cache.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.csproj.AssemblyReference.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\refint\AspNetNetwork.Cache.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\ref\AspNetNetwork.Cache.dll

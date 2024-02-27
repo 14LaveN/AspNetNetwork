@@ -1,0 +1,12 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\bin\Debug\net8.0\AspNetNetwork.Domain.Common.deps.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\bin\Debug\net8.0\AspNetNetwork.Domain.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\bin\Debug\net8.0\AspNetNetwork.Domain.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.csproj.AssemblyReference.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\refint\AspNetNetwork.Domain.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\ref\AspNetNetwork.Domain.Common.dll

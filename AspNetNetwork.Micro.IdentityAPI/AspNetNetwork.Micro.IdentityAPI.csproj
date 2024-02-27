@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Common\" />
+      <Folder Include="Mediatr\Commands\" />
+      <Folder Include="Mediatr\Queries\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AspNetNetwork.Application\AspNetNetwork.Application.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Attendee\AspNetNetwork.Database.Attendee.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.GroupEvent\AspNetNetwork.Database.GroupEvent.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Identity\AspNetNetwork.Database.Identity.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Invitation\AspNetNetwork.Database.Invitation.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Notification\AspNetNetwork.Database.Notification.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.PersonalEvent\AspNetNetwork.Database.PersonalEvent.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Domain.Identity\AspNetNetwork.Domain.Identity.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
+      <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.2" />
+      <PackageReference Include="Serilog" Version="3.1.2-dev-02097" />
+      <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.1-dev-00572" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>

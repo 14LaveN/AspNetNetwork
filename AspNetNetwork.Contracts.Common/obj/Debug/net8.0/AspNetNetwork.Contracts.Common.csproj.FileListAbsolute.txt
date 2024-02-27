@@ -1,0 +1,11 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\bin\Debug\net8.0\AspNetNetwork.Contracts.Common.deps.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\bin\Debug\net8.0\AspNetNetwork.Contracts.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\bin\Debug\net8.0\AspNetNetwork.Contracts.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\AspNetNetwork.Contracts.Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\AspNetNetwork.Contracts.Common.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\AspNetNetwork.Contracts.Common.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\AspNetNetwork.Contracts.Common.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\AspNetNetwork.Contracts.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\refint\AspNetNetwork.Contracts.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\AspNetNetwork.Contracts.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\ref\AspNetNetwork.Contracts.Common.dll

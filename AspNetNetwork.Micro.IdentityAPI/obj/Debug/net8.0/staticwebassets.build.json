@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "P48Jjp6wCfHzX8vTsD3wB+yS7s49z6YeXO9GKy/1HZk=",
+  "Source": "AspNetNetwork.Micro.IdentityAPI",
+  "BasePath": "_content/AspNetNetwork.Micro.IdentityAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

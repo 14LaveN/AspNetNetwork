@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.9.0" />
+      <PackageReference Include="IdentityServer4" Version="4.1.2" />
+      <PackageReference Include="MediatR" Version="12.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.0-preview.1.24080.9" />
+      <PackageReference Include="Polly" Version="8.3.0" />
+      <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.4.0-preview1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AspNetNetwork.Cache\AspNetNetwork.Cache.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Identity\AspNetNetwork.Database.Identity.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Domain.Common\AspNetNetwork.Domain.Common.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Domain.Identity\AspNetNetwork.Domain.Identity.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Email\AspNetNetwork.Email.csproj" />
+    </ItemGroup>
+
+</Project>

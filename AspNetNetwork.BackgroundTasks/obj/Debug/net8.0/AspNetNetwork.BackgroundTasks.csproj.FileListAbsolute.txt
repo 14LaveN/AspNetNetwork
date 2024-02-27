@@ -1,0 +1,4 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.BackgroundTasks\obj\Debug\net8.0\AspNetNetwork.BackgroundTasks.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.BackgroundTasks\obj\Debug\net8.0\AspNetNetwork.BackgroundTasks.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.BackgroundTasks\obj\Debug\net8.0\AspNetNetwork.BackgroundTasks.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.BackgroundTasks\obj\Debug\net8.0\AspNetNetwork.BackgroundTasks.csproj.CoreCompileInputs.cache

@@ -1,0 +1,4 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0\AspNetNetwork.Events.Invitation.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0\AspNetNetwork.Events.Invitation.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0\AspNetNetwork.Events.Invitation.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0\AspNetNetwork.Events.Invitation.csproj.CoreCompileInputs.cache

@@ -1,0 +1,17 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Database.Identity.deps.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Database.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Database.Identity.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Identity.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.csproj.AssemblyReference.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.csproj.CopyComplete
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\refint\AspNetNetwork.Database.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\ref\AspNetNetwork.Database.Identity.dll

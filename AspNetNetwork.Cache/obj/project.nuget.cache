@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "T5q7CarLwbVILUKsjkniG+Ab3Cn1xQIDrqSU0wFh9GSPRy2lOZOZEt540MyxXjh+yjh0MiCbvEAEUa3nfs46Hg==",
+  "success": true,
+  "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Cache\\AspNetNetwork.Cache.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.caching.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.1.24080.9\\microsoft.extensions.primitives.9.0.0-preview.1.24080.9.nupkg.sha512"
+  ],
+  "logs": []
+}

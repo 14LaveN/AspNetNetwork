@@ -1,0 +1,11 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\bin\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.deps.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\bin\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\bin\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\obj\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\obj\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\obj\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\obj\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\obj\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\obj\Debug\net8.0\refint\AspNetNetwork.Micro.MessagingAPI.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\obj\Debug\net8.0\AspNetNetwork.Micro.MessagingAPI.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Micro.MessagingAPI\obj\Debug\net8.0\ref\AspNetNetwork.Micro.MessagingAPI.dll

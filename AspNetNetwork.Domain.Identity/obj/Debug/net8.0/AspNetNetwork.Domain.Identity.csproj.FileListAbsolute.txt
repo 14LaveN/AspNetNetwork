@@ -1,0 +1,15 @@
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Identity.deps.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Identity.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\bin\Debug\net8.0\AspNetNetwork.Domain.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.csproj.AssemblyReference.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.AssemblyInfoInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.AssemblyInfo.cs
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.csproj.CopyComplete
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\refint\AspNetNetwork.Domain.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\ref\AspNetNetwork.Domain.Identity.dll

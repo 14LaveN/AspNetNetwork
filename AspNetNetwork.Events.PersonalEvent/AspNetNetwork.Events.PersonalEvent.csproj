@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AspNetNetwork.Application\AspNetNetwork.Application.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Contracts.Common\AspNetNetwork.Contracts.Common.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Identity\AspNetNetwork.Database.Identity.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Notification\AspNetNetwork.Database.Notification.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.PersonalEvent\AspNetNetwork.Database.PersonalEvent.csproj" />
+    </ItemGroup>
+
+</Project>

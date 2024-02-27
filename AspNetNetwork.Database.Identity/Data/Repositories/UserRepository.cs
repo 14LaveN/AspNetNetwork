@@ -21,9 +21,4 @@ public class UserRepository(UserDbContext userDbContext)
     public async Task<Maybe<User>> GetByEmailAsync(EmailAddress emailAddress) =>
         await userDbContext.Set<User>().FirstOrDefaultAsync(x=>x.EmailAddress == emailAddress) 
         ?? throw new ArgumentNullException();
-
-    public Task<bool> IsEmailUniqueAsync(EmailAddress emailAddress)
-    {
-        throw new NotImplementedException();
-    }
 }

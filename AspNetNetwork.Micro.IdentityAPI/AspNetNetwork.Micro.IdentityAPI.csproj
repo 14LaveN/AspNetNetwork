@@ -9,12 +9,14 @@
 
     <ItemGroup>
       <Folder Include="Common\" />
-      <Folder Include="Mediatr\Commands\" />
+      <Folder Include="Mediatr\Commands\ChangePassword\" />
       <Folder Include="Mediatr\Queries\" />
+      <Folder Include="Logs\" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\AspNetNetwork.Application\AspNetNetwork.Application.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.BackgroundTasks\AspNetNetwork.BackgroundTasks.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.Attendee\AspNetNetwork.Database.Attendee.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.GroupEvent\AspNetNetwork.Database.GroupEvent.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.Identity\AspNetNetwork.Database.Identity.csproj" />
@@ -25,9 +27,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.0" />
       <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.2" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
       <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.2" />
+      <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />
+      <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.6.0" />
       <PackageReference Include="Serilog" Version="3.1.2-dev-02097" />
       <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.1-dev-00572" />
     </ItemGroup>

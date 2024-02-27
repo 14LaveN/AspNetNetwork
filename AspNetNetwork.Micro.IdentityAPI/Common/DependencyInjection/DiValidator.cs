@@ -1,3 +1,7 @@
+using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login;
+using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register;
+using FluentValidation;
+
 namespace AspNetNetwork.Micro.IdentityAPI.Common.DependencyInjection;
 
 public static class DiValidator
@@ -14,8 +18,8 @@ public static class DiValidator
             throw new ArgumentNullException(nameof(services));
         }
         
-        //services.AddScoped<IValidator<LoginCommand>, LoginCommandValidator>();
-        //services.AddScoped<IValidator<RegisterCommand>, RegisterCommandValidator>();
+        services.AddScoped<IValidator<LoginCommand>, LoginCommandValidator>();
+        services.AddScoped<IValidator<RegisterCommand>, RegisterCommandValidator>();
         
         return services;
     }

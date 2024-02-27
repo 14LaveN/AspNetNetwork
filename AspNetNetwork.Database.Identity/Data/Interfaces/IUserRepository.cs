@@ -30,11 +30,4 @@ public interface IUserRepository
     /// <param name="emailAddress">The user emailAddress.</param>
     /// <returns>The maybe instance that may contain the user with the specified emailAddress.</returns>
     Task<Maybe<User>> GetByEmailAsync(EmailAddress emailAddress);
-
-    /// <summary>
-    /// Checks if the specified emailAddress is unique.
-    /// </summary>
-    /// <param name="emailAddress">The emailAddress.</param>
-    /// <returns>True if the specified emailAddress is unique, otherwise false.</returns>
-    Task<bool> IsEmailUniqueAsync(EmailAddress emailAddress);
 }

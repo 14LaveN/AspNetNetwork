@@ -97,6 +97,8 @@ public static class ApiRoutes
     /// </summary>
     public static class Users
     {
+        public const string Login = "login";
+        
         public const string GetById = "users/{userId:guid}";
 
         public const string Update = "users/{userId:guid}";

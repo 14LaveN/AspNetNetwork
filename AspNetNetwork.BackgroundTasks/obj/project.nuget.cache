@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eYv0iHyOpXXulbyL0lcCJpc/5eWyolz/x7pibwkZMPhRTAKJADD92A7xt33Wcjp/eScNWadCt0yLYMV3wz0IyA==",
+  "dgSpecHash": "lMb/opA96cFmibFcntKB39fGUpr4+Ol3ptBhG5l7D2SHZqq99pYv8e7ZGoEyGX3vuC8Sbv8Tx27+bFtZ1mHybg==",
   "success": false,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.BackgroundTasks\\AspNetNetwork.BackgroundTasks.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.4.0-preview1\\microsoft.identitymodel.tokens.7.4.0-preview1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\mimekit\\4.3.0\\mimekit.4.3.0.nupkg.sha512",
@@ -78,6 +79,9 @@
     "C:\\Users\\ponom\\.nuget\\packages\\rabbitmq.client\\7.0.0-alpha.3\\rabbitmq.client.7.0.0-alpha.3.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",

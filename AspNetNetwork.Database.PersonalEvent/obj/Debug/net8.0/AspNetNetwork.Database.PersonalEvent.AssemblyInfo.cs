@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetNetwork.Database.PersonalEvent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a22fbf7fc12f3b1c1397cbd7072187ce0eeac2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetNetwork.Database.PersonalEvent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetNetwork.Database.PersonalEvent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

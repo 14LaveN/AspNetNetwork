@@ -1,3 +1,4 @@
+using AspNetNetwork.Domain.Common.Core.Primitives.Result;
 using AspNetNetwork.Domain.Common.Enumerations;
 
 namespace AspNetNetwork.Application.ApiHelpers.Responses;
@@ -16,7 +17,7 @@ public class LoginResponse<T>
     /// <summary>
     /// Gets or sets data.
     /// </summary>
-    public T? Data { get; set; }
+    public Task<T> Data { get; set; }
 
     /// <summary>
     /// Gets or sets status code.

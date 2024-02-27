@@ -1,4 +1,6 @@
 using AspNetNetwork.Application.Core.Behaviours;
+using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login;
+using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register;
 using MediatR;
 using MediatR.NotificationPublishers;
 
@@ -11,7 +13,7 @@ public static class DiMediator
     /// </summary>
     /// <param name="services">The service collection.</param>
     /// <returns>The same service collection.</returns>
-    public static IServiceCollection AddMediatrExtension(this IServiceCollection services)
+    public static IServiceCollection AddMediatr(this IServiceCollection services)
     {
         if (services is null)
         {
@@ -21,9 +23,15 @@ public static class DiMediator
         services.AddMediatR(x =>
         {
             x.RegisterServicesFromAssemblyContaining<Program>();
+
+            x.RegisterServicesFromAssemblies(typeof(RegisterCommand).Assembly,
+                typeof(RegisterCommandHandler).Assembly);
+            
+            x.RegisterServicesFromAssemblies(typeof(LoginCommand).Assembly,
+                typeof(LoginCommandHandler).Assembly);
             
             x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
-            x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(TaskTransactionBehavior<,>));
+            x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(UserTransactionBehaviour<,>));
             x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(MetricsBehaviour<,>));
             x.AddOpenBehavior(typeof(QueryCachingBehavior<,>));
             

@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <Folder Include="Common\" />
-      <Folder Include="Mediatr\Commands\ChangePassword\" />
       <Folder Include="Mediatr\Queries\" />
       <Folder Include="Logs\" />
     </ItemGroup>

@@ -66,6 +66,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetNetwork.Contracts.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetNetwork.Micro.MessagingAPI", "AspNetNetwork.Micro.MessagingAPI\AspNetNetwork.Micro.MessagingAPI.csproj", "{DECE2399-FA3D-43A9-8F96-4A6DB531568F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3F316C8-B908-49CD-9B27-1D6C7BA58336}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetNetwork.Domain.Message", "AspNetNetwork.Domain.Message\AspNetNetwork.Domain.Message.csproj", "{22AB4148-FDF9-4037-9290-4511DF5CEF1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetNetwork.Database.Message", "AspNetNetwork.Database.Message\AspNetNetwork.Database.Message.csproj", "{7C8897CA-9B6E-4B6A-997E-A788C39AE0FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -172,6 +181,14 @@ Global
 		{DECE2399-FA3D-43A9-8F96-4A6DB531568F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DECE2399-FA3D-43A9-8F96-4A6DB531568F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DECE2399-FA3D-43A9-8F96-4A6DB531568F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22AB4148-FDF9-4037-9290-4511DF5CEF1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22AB4148-FDF9-4037-9290-4511DF5CEF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22AB4148-FDF9-4037-9290-4511DF5CEF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22AB4148-FDF9-4037-9290-4511DF5CEF1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C8897CA-9B6E-4B6A-997E-A788C39AE0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C8897CA-9B6E-4B6A-997E-A788C39AE0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C8897CA-9B6E-4B6A-997E-A788C39AE0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C8897CA-9B6E-4B6A-997E-A788C39AE0FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{31D98D8F-3BF7-41F3-BE44-E84CB13F4EB2} = {C1B4842E-0FEF-4F05-9C33-678B8BC1467B}
@@ -199,5 +216,7 @@ Global
 		{703441EF-60EC-4CC3-8170-97669B865206} = {50BB7183-2A1D-47D8-94DD-C5DD65D8E432}
 		{99D768EF-F6CD-4F01-9442-B1269C21F49F} = {A4FFCF16-DCC2-4D73-AF5C-B31A8DE6FEE2}
 		{DECE2399-FA3D-43A9-8F96-4A6DB531568F} = {072FFD74-AC76-4D28-9B09-3364D30E2457}
+		{22AB4148-FDF9-4037-9290-4511DF5CEF1E} = {A4FFCF16-DCC2-4D73-AF5C-B31A8DE6FEE2}
+		{7C8897CA-9B6E-4B6A-997E-A788C39AE0FA} = {41345CD1-71ED-43B0-B81B-264C91F0453C}
 	EndGlobalSection
 EndGlobal

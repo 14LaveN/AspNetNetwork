@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asp-net-network
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: asp-net-network
+  template:
+    metadata:
+      labels:
+        app: team-tasks
+    spec:
+      containers:
+        - name: aspnetnetwork-micro-identityapi
+          image: aspnetnetwork-micro-identityapi:latest
+          ports:
+            - containerPort: 7187
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elasticsearch
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elasticsearch
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+    spec:
+      containers:
+        - name: elasticsearch
+          image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+          ports:
+            - containerPort: 9200
+              name: http
+      volumes:
+        - name: elasticsearch-data
+          persistentVolumeClaim:
+            claimName: elasticsearch-data-pvc
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kibana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kibana
+  template:
+    metadata:
+      labels:
+        app: kibana
+    spec:
+      containers:
+        - name: kibana
+          image: docker.elastic.co/kibana/kibana:7.9.2
+          ports:
+            - containerPort: 5601
+              name: http
+          env:
+            - name: ELASTICSEARCH_URL
+              value: http://elasticsearch:9200
+      volumes:
+        - name: kibana-config
+          persistentVolumeClaim:
+            claimName: kibana-config-pvc

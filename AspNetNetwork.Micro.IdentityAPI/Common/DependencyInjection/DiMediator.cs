@@ -1,4 +1,5 @@
 using AspNetNetwork.Application.Core.Behaviours;
+using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword;
 using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login;
 using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register;
 using MediatR;
@@ -29,6 +30,9 @@ public static class DiMediator
             
             x.RegisterServicesFromAssemblies(typeof(LoginCommand).Assembly,
                 typeof(LoginCommandHandler).Assembly);
+            
+            x.RegisterServicesFromAssemblies(typeof(ChangePasswordCommand).Assembly,
+                typeof(ChangePasswordCommandHandler).Assembly);
             
             x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
             x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(UserTransactionBehaviour<,>));

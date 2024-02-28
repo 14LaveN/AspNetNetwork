@@ -7,6 +7,7 @@ using AspNetNetwork.Domain.Common.Core.Primitives.Result;
 using AspNetNetwork.Domain.Common.ValueObjects;
 using AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Login;
 using AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register;
+using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword;
 using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login;
 using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register;
 using MediatR;
@@ -25,6 +26,8 @@ public sealed class UsersController(
         IUserRepository userRepository)
     : ApiController(sender, userRepository)
 {
+    #region Commands.
+    
     /// <summary>
     /// Login user.
     /// </summary>
@@ -71,4 +74,27 @@ public sealed class UsersController(
             .Bind(command => BaseRetryPolicy.Policy.Execute(async () =>
                 await Sender.Send(command)).Result.Data)
             .Match(Ok, Unauthorized);
+
+    /// <summary>
+    /// Change password from user.
+    /// </summary>
+    /// <param name="password">The password.</param>
+    /// <returns>Base information about change password from user method.</returns>
+    /// <remarks>
+    /// Example request:
+    /// </remarks>
+    /// <response code="200">OK.</response>
+    /// <response code="400">Bad request.</response>
+    /// <response code="500">Internal server error.</response>
+    [HttpPost(ApiRoutes.Users.Login)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ApiErrorResponse), StatusCodes.Status401Unauthorized)]
+    public async Task<IActionResult> ChangePassword([FromBody] string password) =>
+        await Result.Create(password, DomainErrors.General.UnProcessableRequest)
+            .Map(changePasswordRequest => new ChangePasswordCommand(UserId,changePasswordRequest))
+            .Bind(command => BaseRetryPolicy.Policy.Execute(async () =>
+                await Sender.Send(command)))
+            .Match(Ok, BadRequest);
+    
+    #endregion
 }

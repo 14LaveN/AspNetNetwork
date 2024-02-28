@@ -5,8 +5,6 @@ using AspNetNetwork.Domain.Identity.Entities;
 
 namespace AspNetNetwork.Events.GroupEvent.Events.Commands.AddToGroupEventAttendee;
 
-//TODO Create the handlers and think about logic group events.
-
 /// <summary>
 /// Represents the add to group event attendee command record class.
 /// </summary>

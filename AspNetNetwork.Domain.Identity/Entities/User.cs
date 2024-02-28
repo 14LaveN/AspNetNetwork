@@ -49,7 +49,17 @@ public sealed partial class User : IdentityUser<Guid>, IAuditableEntity, ISoftDe
     }
 
     public Guid Id { get; set; }
+    
+    /// <summary>
+    /// Gets or sets author messages.
+    /// </summary>
+    public ICollection<Message>? AuthorMessages { get; set; }
 
+    /// <summary>
+    /// Gets or sets recipient messages.
+    /// </summary>
+    public ICollection<Message>? RecipientMessages { get; set; }
+    
     /// <summary>
     /// Gets the user first name.
     /// </summary>

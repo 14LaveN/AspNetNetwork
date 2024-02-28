@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetNetwork.BackgroundTasks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8937dc0bec97431591f284d496d988451f80533")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b857e6b77987fc4bc5a06c7d61819e75f66867bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetNetwork.BackgroundTasks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetNetwork.BackgroundTasks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,10 +8,6 @@ using AspNetNetwork.Domain.Identity.Enumerations;
 
 namespace AspNetNetwork.BackgroundTasks.Services;
 
-//TODO Create Publishers in Personal and Group events.
-//TODO Create publishers where events saving and cancelled.
-//TODO Create publishers notification.
-
 /// <summary>
 /// Represents the personal event notifications producer.
 /// </summary>

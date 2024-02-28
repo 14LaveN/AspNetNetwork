@@ -20,7 +20,9 @@ namespace AspNetNetwork.Micro.IdentityAPI.Controllers.V1;
 /// <param name="sender">The sender.</param>
 /// <param name="userRepository">The user repository.</param>
 [Route("api/v1/users")]
-public sealed class UsersController(ISender sender, IUserRepository userRepository)
+public sealed class UsersController(
+        ISender sender,
+        IUserRepository userRepository)
     : ApiController(sender, userRepository)
 {
     /// <summary>
@@ -58,7 +60,7 @@ public sealed class UsersController(ISender sender, IUserRepository userReposito
     [HttpPost(ApiRoutes.Users.Login)]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ApiErrorResponse), StatusCodes.Status401Unauthorized)]
-    public async Task<IActionResult> Login([FromBody] RegisterRequest request) =>
+    public async Task<IActionResult> Register([FromBody] RegisterRequest request) =>
         await Result.Create(request, DomainErrors.General.UnProcessableRequest)
             .Map(registerRequest => new RegisterCommand(
                     FirstName.Create(registerRequest.FirstName).Value,

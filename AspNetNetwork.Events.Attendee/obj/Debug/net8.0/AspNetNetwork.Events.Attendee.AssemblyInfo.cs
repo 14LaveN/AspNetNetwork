@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetNetwork.Events.Attendee")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a22fbf7fc12f3b1c1397cbd7072187ce0eeac2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8937dc0bec97431591f284d496d988451f80533")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetNetwork.Events.Attendee")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetNetwork.Events.Attendee")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

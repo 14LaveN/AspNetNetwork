@@ -6,12 +6,9 @@ using AspNetNetwork.Domain.Common.Core.Primitives.Result;
 using AspNetNetwork.Domain.Common.Enumerations;
 using AspNetNetwork.Domain.Common.ValueObjects;
 using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Email.Emails;
 using AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login;
-using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
-using Quartz.Util;
 
 namespace AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register;
 

@@ -3,6 +3,7 @@ using AspNetNetwork.Database.Attendee;
 using AspNetNetwork.Database.GroupEvent;
 using AspNetNetwork.Database.Identity;
 using AspNetNetwork.Database.Invitation;
+using AspNetNetwork.Database.MetricsAndMessages;
 using AspNetNetwork.Database.Notification;
 using AspNetNetwork.Database.PersonalEvent;
 
@@ -24,6 +25,7 @@ public static class DiDatabase
             throw new ArgumentNullException(nameof(services));
         }
 
+        services.AddMongoDatabase(configuration);
         services.AddUserDatabase(configuration);
         services.AddAttendeesDatabase(configuration);
         services.AddPersonalEventDatabase(configuration);

@@ -16,6 +16,18 @@ public static class ValidationErrors
 
         internal static Error PasswordIsRequired => new Error("Login.PasswordIsRequired", "The password is required.");
     }
+    
+    /// <summary>
+    /// Contains the create message errors.
+    /// </summary>
+    public static class CreateMessage
+    {
+        public static Error DescriptionIsRequired => 
+            new("CreateMessage.DescriptionIsRequired", "The description is required.");
+
+        public static Error RecipientIdIsRequired => 
+            new("CreateMessage.RecipientIdIsRequired", "The recipient identifier is required.");
+    }
 
     /// <summary>
     /// Contains the create group event errors.

@@ -7,12 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="DTO\" />
-      <Folder Include="Entities\" />
-      <Folder Include="Events\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\AspNetNetwork.Domain.Common\AspNetNetwork.Domain.Common.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Domain.Identity\AspNetNetwork.Domain.Identity.csproj" />
     </ItemGroup>

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "aFV09LLs/oA7Mn3nAaLDWlvNyiQSl8bHKToNmIkfjgzyVaCfm46yjdjEcCC+2qnXf72hIyH7ze5Ik4KABvkOHQ==",
+  "dgSpecHash": "Ju2rdh2xVFzwuND1r8lhnDax7KO2IRNDOFewt6CtOw0ArBu+2wy22PwBdfFtLWzwonfMOn//P+zoq2UqvwFrFw==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Message\\AspNetNetwork.Database.Message.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ponom\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\8.0.0\\aspnetcore.healthchecks.npgsql.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.0-preview.1.24081.5\\microsoft.aspnetcore.cryptography.internal.9.0.0-preview.1.24081.5.nupkg.sha512",

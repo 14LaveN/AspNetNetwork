@@ -8,7 +8,7 @@ namespace AspNetNetwork.Domain.Identity.Entities;
 /// Represents the message class.
 /// </summary>
 public sealed class Message
-    : Entity, IAuditableEntity, ISoftDeletableEntity
+    : AggregateRoot, IAuditableEntity, ISoftDeletableEntity
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="Message"/> class.
@@ -27,6 +27,11 @@ public sealed class Message
         RecipientId = recipientId;
         AuthorId = authorId;
     }
+
+    /// <summary>
+    /// Gets or sets is answered flag.
+    /// </summary>
+    public bool IsAnswered { get; set; }
 
     /// <summary>
     /// Gets or sets author.
@@ -54,8 +59,8 @@ public sealed class Message
     public string Description { get; set; }
 
     /// <inheritdoc />
-    public DateTime CreatedOnUtc { get; }
-    
+    public DateTime CreatedOnUtc { get; set; }
+
     /// <inheritdoc />
     public DateTime? ModifiedOnUtc { get; }
     

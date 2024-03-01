@@ -17,6 +17,18 @@ public static class DomainErrors
         
         public static Error AlreadyDone => new("Task.AlreadyDone", "The task with the specified identifier already done.");
     }
+    
+    /// <summary>
+    /// Contains the message errors.
+    /// </summary>
+    public static class Message
+    {
+        public static Error NotFound =>
+            new("Message.NotFound", "The message with the specified identifier was not found.");
+        
+        public static Error AlreadyAnswered => new("Message.AlreadyAnswered", "The message with the specified identifier already answered.");
+    }
+
 
     /// <summary>
     /// Contains the user errors.

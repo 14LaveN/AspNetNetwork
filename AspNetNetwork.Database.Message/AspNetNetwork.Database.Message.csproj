@@ -8,10 +8,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\AspNetNetwork.Database.Common\AspNetNetwork.Database.Common.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Domain.Message\AspNetNetwork.Domain.Message.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.0" />
+      <PackageReference Include="Dapper" Version="2.1.28" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
     </ItemGroup>
 

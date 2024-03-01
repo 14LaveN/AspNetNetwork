@@ -38,7 +38,6 @@ public static class DiMediator
             x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(UserTransactionBehaviour<,>));
             x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(MetricsBehaviour<,>));
             x.AddOpenBehavior(typeof(QueryCachingBehavior<,>));
-            
             x.NotificationPublisher = new ForeachAwaitPublisher();
         });
         

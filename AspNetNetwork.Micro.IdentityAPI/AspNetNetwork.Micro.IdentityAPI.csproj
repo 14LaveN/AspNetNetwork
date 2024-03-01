@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <Folder Include="Common\" />
-      <Folder Include="Mediatr\Queries\" />
       <Folder Include="Logs\" />
     </ItemGroup>
 
@@ -20,6 +19,7 @@
       <ProjectReference Include="..\AspNetNetwork.Database.GroupEvent\AspNetNetwork.Database.GroupEvent.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.Identity\AspNetNetwork.Database.Identity.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.Invitation\AspNetNetwork.Database.Invitation.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.MetricsAndMessages\AspNetNetwork.Database.MetricsAndMessages.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.Notification\AspNetNetwork.Database.Notification.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.PersonalEvent\AspNetNetwork.Database.PersonalEvent.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Domain.Identity\AspNetNetwork.Domain.Identity.csproj" />

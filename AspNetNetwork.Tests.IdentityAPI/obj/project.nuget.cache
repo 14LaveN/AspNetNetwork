@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jkps5Cu/WisYbwza6Hh7/n0tYVtGlHK2HTLQmkalSj5Zmar4YorNA9JIMk2MokN7tjJu3v9QLWKjREOsGIKUtQ==",
+  "dgSpecHash": "utqZ9ecn6jZSkdt/BkmHE87mw7gBXAdr9P1ji6vQb0iz91hHDNAQUBBL+PgQWXP9YkbnPBUiI1lqOa5OApj6Pw==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Tests.IdentityAPI\\AspNetNetwork.Tests.IdentityAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\aspnetcore.healthchecks.mongodb\\8.0.0\\aspnetcore.healthchecks.mongodb.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\8.0.0\\aspnetcore.healthchecks.npgsql.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\aspnetcore.healthchecks.rabbitmq\\8.0.0\\aspnetcore.healthchecks.rabbitmq.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\8.0.0\\aspnetcore.healthchecks.ui.client.8.0.0.nupkg.sha512",

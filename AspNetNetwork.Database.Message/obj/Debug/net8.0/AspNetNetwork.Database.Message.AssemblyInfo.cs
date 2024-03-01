@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetNetwork.Database.Message")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b857e6b77987fc4bc5a06c7d61819e75f66867bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c89a687efcc2d03b87345d954d02427ae4b71e27")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetNetwork.Database.Message")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetNetwork.Database.Message")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

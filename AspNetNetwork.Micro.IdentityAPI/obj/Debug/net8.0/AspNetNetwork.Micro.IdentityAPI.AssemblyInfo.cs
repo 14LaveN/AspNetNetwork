@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetNetwork.Micro.IdentityAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8937dc0bec97431591f284d496d988451f80533")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c89a687efcc2d03b87345d954d02427ae4b71e27")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetNetwork.Micro.IdentityAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetNetwork.Micro.IdentityAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

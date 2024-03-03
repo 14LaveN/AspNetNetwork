@@ -37,3 +37,6 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.GroupEvent\obj\Debug\net8.0
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.GroupEvent\obj\Debug\net8.0\refint\AspNetNetwork.Events.GroupEvent.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.GroupEvent\obj\Debug\net8.0\AspNetNetwork.Events.GroupEvent.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.GroupEvent\obj\Debug\net8.0\ref\AspNetNetwork.Events.GroupEvent.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.GroupEvent\bin\Debug\net8.0\AspNetNetwork.Domain.Message.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.GroupEvent\bin\Debug\net8.0\AspNetNetwork.Domain.Message.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.GroupEvent\obj\Debug\net8.0\AspNetNetwork.Events.GroupEvent.sourcelink.json

@@ -15,6 +15,6 @@ public sealed class UserDbJob : IJob
     public async Task Execute(IJobExecutionContext context)
     {
         await _appDbContext.SaveChangesAsync();
-        WriteLine("SaveChanges");
+        WriteLine($"User.SaveChanges - {DateTime.UtcNow}");
     }
 }

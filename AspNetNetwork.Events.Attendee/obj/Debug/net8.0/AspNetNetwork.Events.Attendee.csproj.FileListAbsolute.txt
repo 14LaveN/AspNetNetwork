@@ -27,3 +27,12 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\obj\Debug\net8.0\A
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\obj\Debug\net8.0\refint\AspNetNetwork.Events.Attendee.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\obj\Debug\net8.0\AspNetNetwork.Events.Attendee.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\obj\Debug\net8.0\ref\AspNetNetwork.Events.Attendee.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Database.Attendee.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Database.GroupEvent.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Database.Invitation.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Domain.Message.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Database.Attendee.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Database.GroupEvent.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Database.Invitation.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Domain.Message.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\obj\Debug\net8.0\AspNetNetwork.Events.Attendee.sourcelink.json

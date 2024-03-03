@@ -21,3 +21,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\AspNe
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\refint\AspNetNetwork.Application.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\AspNetNetwork.Application.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\ref\AspNetNetwork.Application.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\AspNetNetwork.Application.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetNetwork.Domain.Company")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c89a687efcc2d03b87345d954d02427ae4b71e27")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7f4677d98a5d11f8926113518442468d4ed9aa3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetNetwork.Domain.Company")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetNetwork.Domain.Company")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

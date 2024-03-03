@@ -125,6 +125,124 @@
         }
       }
     },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.BackgroundTasks\\AspNetNetwork.BackgroundTasks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.BackgroundTasks\\AspNetNetwork.BackgroundTasks.csproj",
+        "projectName": "AspNetNetwork.BackgroundTasks",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.BackgroundTasks\\AspNetNetwork.BackgroundTasks.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.BackgroundTasks\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Application\\AspNetNetwork.Application.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Application\\AspNetNetwork.Application.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Message\\AspNetNetwork.Database.Message.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Message\\AspNetNetwork.Database.Message.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Notification\\AspNetNetwork.Database.Notification.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Notification\\AspNetNetwork.Database.Notification.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.PersonalEvent\\AspNetNetwork.Database.PersonalEvent.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.PersonalEvent\\AspNetNetwork.Database.PersonalEvent.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24080.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.8.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.0.0-alpha.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Cache\\AspNetNetwork.Cache.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -168,6 +286,152 @@
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
               "version": "[9.0.0-preview.1.24080.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Contracts.Common\\AspNetNetwork.Contracts.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Contracts.Common\\AspNetNetwork.Contracts.Common.csproj",
+        "projectName": "AspNetNetwork.Contracts.Common",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Contracts.Common\\AspNetNetwork.Contracts.Common.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Contracts.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj",
+        "projectName": "AspNetNetwork.Database.Attendee",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Identity\\AspNetNetwork.Database.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Identity\\AspNetNetwork.Database.Identity.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24080.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -280,6 +544,90 @@
         }
       }
     },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj",
+        "projectName": "AspNetNetwork.Database.GroupEvent",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Identity\\AspNetNetwork.Database.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -342,6 +690,97 @@
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Invitation\\AspNetNetwork.Database.Invitation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Invitation\\AspNetNetwork.Database.Invitation.csproj",
+        "projectName": "AspNetNetwork.Database.Invitation",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Invitation\\AspNetNetwork.Database.Invitation.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Invitation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24080.9, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24080.9, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -510,6 +949,172 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.24.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Notification\\AspNetNetwork.Database.Notification.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Notification\\AspNetNetwork.Database.Notification.csproj",
+        "projectName": "AspNetNetwork.Database.Notification",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Notification\\AspNetNetwork.Database.Notification.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Notification\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Identity\\AspNetNetwork.Database.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Identity\\AspNetNetwork.Database.Identity.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24080.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.PersonalEvent\\AspNetNetwork.Database.PersonalEvent.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.PersonalEvent\\AspNetNetwork.Database.PersonalEvent.csproj",
+        "projectName": "AspNetNetwork.Database.PersonalEvent",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.PersonalEvent\\AspNetNetwork.Database.PersonalEvent.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.PersonalEvent\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24080.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -821,6 +1426,93 @@
         }
       }
     },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Events.GroupEvent\\AspNetNetwork.Events.GroupEvent.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Events.GroupEvent\\AspNetNetwork.Events.GroupEvent.csproj",
+        "projectName": "AspNetNetwork.Events.GroupEvent",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Events.GroupEvent\\AspNetNetwork.Events.GroupEvent.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Events.GroupEvent\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Application\\AspNetNetwork.Application.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Application\\AspNetNetwork.Application.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Contracts.Common\\AspNetNetwork.Contracts.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Contracts.Common\\AspNetNetwork.Contracts.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Invitation\\AspNetNetwork.Database.Invitation.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Invitation\\AspNetNetwork.Database.Invitation.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Notification\\AspNetNetwork.Database.Notification.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Notification\\AspNetNetwork.Database.Notification.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Micro.MessagingAPI\\AspNetNetwork.Micro.MessagingAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -852,11 +1544,20 @@
               "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Application\\AspNetNetwork.Application.csproj": {
                 "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Application\\AspNetNetwork.Application.csproj"
               },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.BackgroundTasks\\AspNetNetwork.BackgroundTasks.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.BackgroundTasks\\AspNetNetwork.BackgroundTasks.csproj"
+              },
               "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Message\\AspNetNetwork.Database.Message.csproj": {
                 "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Message\\AspNetNetwork.Database.Message.csproj"
               },
               "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.MetricsAndMessages\\AspNetNetwork.Database.MetricsAndMessages.csproj": {
                 "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.MetricsAndMessages\\AspNetNetwork.Database.MetricsAndMessages.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Events.GroupEvent\\AspNetNetwork.Events.GroupEvent.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Events.GroupEvent\\AspNetNetwork.Events.GroupEvent.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj"
               }
             }
           }
@@ -871,6 +1572,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.2.0, )"
@@ -882,6 +1587,14 @@
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Prometheus.Client.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Prometheus.Client.HttpRequestDurations": {
+              "target": "Package",
+              "version": "[3.6.0, )"
             },
             "Serilog": {
               "target": "Package",
@@ -907,6 +1620,97 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj",
+        "projectName": "AspNetNetwork.RabbitMq",
+        "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Application\\AspNetNetwork.Application.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Application\\AspNetNetwork.Application.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Attendee\\AspNetNetwork.Database.Attendee.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.GroupEvent\\AspNetNetwork.Database.GroupEvent.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Invitation\\AspNetNetwork.Database.Invitation.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Invitation\\AspNetNetwork.Database.Invitation.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Identity\\AspNetNetwork.Domain.Identity.csproj"
+              },
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Message\\AspNetNetwork.Domain.Message.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Message\\AspNetNetwork.Domain.Message.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.Rabbitmq": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.0.0-alpha.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

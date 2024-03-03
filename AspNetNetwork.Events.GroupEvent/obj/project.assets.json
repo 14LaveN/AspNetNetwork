@@ -1773,6 +1773,20 @@
           "bin/placeholder/AspNetNetwork.Domain.Identity.dll": {}
         }
       },
+      "AspNetNetwork.Domain.Message/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AspNetNetwork.Domain.Common": "1.0.0",
+          "AspNetNetwork.Domain.Identity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AspNetNetwork.Domain.Message.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AspNetNetwork.Domain.Message.dll": {}
+        }
+      },
       "AspNetNetwork.Email/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1795,7 +1809,12 @@
         "dependencies": {
           "AspNetCore.HealthChecks.Rabbitmq": "8.0.0",
           "AspNetNetwork.Application": "1.0.0",
+          "AspNetNetwork.Database.Attendee": "1.0.0",
+          "AspNetNetwork.Database.Common": "1.0.0",
+          "AspNetNetwork.Database.GroupEvent": "1.0.0",
+          "AspNetNetwork.Database.Invitation": "1.0.0",
           "AspNetNetwork.Domain.Identity": "1.0.0",
+          "AspNetNetwork.Domain.Message": "1.0.0",
           "RabbitMQ.Client": "7.0.0-alpha.3"
         },
         "compile": {
@@ -4250,6 +4269,11 @@
       "type": "project",
       "path": "../AspNetNetwork.Domain.Identity/AspNetNetwork.Domain.Identity.csproj",
       "msbuildProject": "../AspNetNetwork.Domain.Identity/AspNetNetwork.Domain.Identity.csproj"
+    },
+    "AspNetNetwork.Domain.Message/1.0.0": {
+      "type": "project",
+      "path": "../AspNetNetwork.Domain.Message/AspNetNetwork.Domain.Message.csproj",
+      "msbuildProject": "../AspNetNetwork.Domain.Message/AspNetNetwork.Domain.Message.csproj"
     },
     "AspNetNetwork.Email/1.0.0": {
       "type": "project",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "utqZ9ecn6jZSkdt/BkmHE87mw7gBXAdr9P1ji6vQb0iz91hHDNAQUBBL+PgQWXP9YkbnPBUiI1lqOa5OApj6Pw==",
+  "dgSpecHash": "UogO6HxNSiywko5YSC8o1smG8Gv1wlDKcrvc1fxKL0270hUR+c4X1PIGC1VmYuBgRnywilG+Prw+3ppkUr4ieA==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Tests.IdentityAPI\\AspNetNetwork.Tests.IdentityAPI.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\fluentassertions\\7.0.0-alpha.3\\fluentassertions.7.0.0-alpha.3.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",

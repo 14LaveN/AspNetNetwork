@@ -13,3 +13,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\A
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\refint\AspNetNetwork.Domain.Identity.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\ref\AspNetNetwork.Domain.Identity.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Identity\obj\Debug\net8.0\AspNetNetwork.Domain.Identity.sourcelink.json

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NitxmsQ26Sx660kkkODS3NYoOavSM1u9yjgyrgOLU83A3Sep6TpQBuVze2W0O72IVGxFsUmfzjhMrslVPIbeeA==",
+  "dgSpecHash": "q5izo7/IbKxZIuuhGLr79G4bm5raw/z2TYfd5H3swdI/6fq2tXK+Wb/BjL6I723JML1BU8jrRRyMjiCNRjV/sw==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Micro.IdentityAPI\\AspNetNetwork.Micro.IdentityAPI.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",

@@ -10,3 +10,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwo
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\refint\AspNetNetwork.Email.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\ref\AspNetNetwork.Email.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Email\obj\Debug\net8.0\AspNetNetwork.Email.sourcelink.json

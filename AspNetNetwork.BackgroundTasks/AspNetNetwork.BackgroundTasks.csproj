@@ -21,6 +21,7 @@
       <ProjectReference Include="..\AspNetNetwork.Application\AspNetNetwork.Application.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.Attendee\AspNetNetwork.Database.Attendee.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.GroupEvent\AspNetNetwork.Database.GroupEvent.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Message\AspNetNetwork.Database.Message.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.Notification\AspNetNetwork.Database.Notification.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.PersonalEvent\AspNetNetwork.Database.PersonalEvent.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Domain.Common\AspNetNetwork.Domain.Common.csproj" />

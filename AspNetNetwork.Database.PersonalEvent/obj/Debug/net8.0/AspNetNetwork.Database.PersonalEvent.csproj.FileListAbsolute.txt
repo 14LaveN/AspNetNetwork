@@ -17,3 +17,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.PersonalEvent\obj\Debug\n
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.PersonalEvent\obj\Debug\net8.0\refint\AspNetNetwork.Database.PersonalEvent.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.PersonalEvent\obj\Debug\net8.0\AspNetNetwork.Database.PersonalEvent.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.PersonalEvent\obj\Debug\net8.0\ref\AspNetNetwork.Database.PersonalEvent.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.PersonalEvent\obj\Debug\net8.0\AspNetNetwork.Database.PersonalEvent.sourcelink.json

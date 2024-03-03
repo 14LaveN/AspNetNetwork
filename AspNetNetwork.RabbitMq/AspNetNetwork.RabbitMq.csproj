@@ -13,7 +13,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\AspNetNetwork.Application\AspNetNetwork.Application.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Attendee\AspNetNetwork.Database.Attendee.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Common\AspNetNetwork.Database.Common.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.GroupEvent\AspNetNetwork.Database.GroupEvent.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Database.Invitation\AspNetNetwork.Database.Invitation.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Domain.Identity\AspNetNetwork.Domain.Identity.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Domain.Message\AspNetNetwork.Domain.Message.csproj" />
     </ItemGroup>
 
 </Project>

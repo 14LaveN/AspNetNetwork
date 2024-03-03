@@ -31,3 +31,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.PersonalEvent\obj\Debug\net
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.PersonalEvent\obj\Debug\net8.0\refint\AspNetNetwork.Events.PersonalEvent.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.PersonalEvent\obj\Debug\net8.0\AspNetNetwork.Events.PersonalEvent.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.PersonalEvent\obj\Debug\net8.0\ref\AspNetNetwork.Events.PersonalEvent.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.PersonalEvent\obj\Debug\net8.0\AspNetNetwork.Events.PersonalEvent.sourcelink.json

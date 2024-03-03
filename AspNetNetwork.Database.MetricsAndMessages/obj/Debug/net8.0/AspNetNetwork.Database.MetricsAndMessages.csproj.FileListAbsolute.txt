@@ -23,3 +23,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\De
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\Debug\net8.0\refint\AspNetNetwork.Database.MetricsAndMessages.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\Debug\net8.0\AspNetNetwork.Database.MetricsAndMessages.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\Debug\net8.0\ref\AspNetNetwork.Database.MetricsAndMessages.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\Debug\net8.0\AspNetNetwork.Database.MetricsAndMessages.sourcelink.json

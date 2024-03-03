@@ -4,33 +4,41 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Contracts\" />
-      <Folder Include="Controllers\" />
       <Folder Include="Logs\" />
-      <Folder Include="Mediatr\Behaviors\" />
       <Folder Include="Mediatr\Commands\AnswerMessage\" />
-      <Folder Include="Mediatr\Commands\DeleteMessage\" />
-      <Folder Include="Mediatr\Commands\UpdateMessage\" />
       <Folder Include="Mediatr\Queries\GetMessageById\" />
       <Folder Include="Mediatr\Queries\GetMessagesByIsAnswered\" />
       <Folder Include="Mediatr\Queries\GetRecipientMessagesById\" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.0" />
       <PackageReference Include="MediatR" Version="12.2.0" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
       <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.2" />
+      <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />
+      <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.6.0" />
       <PackageReference Include="Serilog" Version="3.1.2-dev-02097" />
       <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.1-dev-00575" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\AspNetNetwork.Application\AspNetNetwork.Application.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.BackgroundTasks\AspNetNetwork.BackgroundTasks.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.Message\AspNetNetwork.Database.Message.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Database.MetricsAndMessages\AspNetNetwork.Database.MetricsAndMessages.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.Events.GroupEvent\AspNetNetwork.Events.GroupEvent.csproj" />
+      <ProjectReference Include="..\AspNetNetwork.RabbitMq\AspNetNetwork.RabbitMq.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
     </ItemGroup>
 
 </Project>

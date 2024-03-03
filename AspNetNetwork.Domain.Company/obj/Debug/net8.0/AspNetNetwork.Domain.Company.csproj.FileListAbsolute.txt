@@ -15,3 +15,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\As
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\bin\Debug\net8.0\AspNetNetwork.Domain.Identity.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.csproj.AssemblyReference.cache
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.csproj.CopyComplete
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Company\obj\Debug\net8.0\AspNetNetwork.Domain.Company.sourcelink.json

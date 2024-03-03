@@ -19,3 +19,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Notification\obj\Debug\ne
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Notification\obj\Debug\net8.0\refint\AspNetNetwork.Database.Notification.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Notification\obj\Debug\net8.0\AspNetNetwork.Database.Notification.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Notification\obj\Debug\net8.0\ref\AspNetNetwork.Database.Notification.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Notification\obj\Debug\net8.0\AspNetNetwork.Database.Notification.sourcelink.json

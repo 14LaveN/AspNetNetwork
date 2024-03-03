@@ -23,3 +23,14 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\obj\Debug\net8.0\AspNetNe
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\obj\Debug\net8.0\refint\AspNetNetwork.RabbitMq.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\obj\Debug\net8.0\AspNetNetwork.RabbitMq.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\obj\Debug\net8.0\ref\AspNetNetwork.RabbitMq.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.Attendee.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.GroupEvent.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.Invitation.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Domain.Message.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.Attendee.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.GroupEvent.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.Invitation.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Domain.Message.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\obj\Debug\net8.0\AspNetNetwork.RabbitMq.sourcelink.json

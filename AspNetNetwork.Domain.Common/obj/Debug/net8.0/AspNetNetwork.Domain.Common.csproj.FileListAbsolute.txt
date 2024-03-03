@@ -10,3 +10,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\Asp
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\refint\AspNetNetwork.Domain.Common.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\ref\AspNetNetwork.Domain.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Domain.Common\obj\Debug\net8.0\AspNetNetwork.Domain.Common.sourcelink.json

@@ -10,3 +10,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwo
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\refint\AspNetNetwork.Cache.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\ref\AspNetNetwork.Cache.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Cache\obj\Debug\net8.0\AspNetNetwork.Cache.sourcelink.json

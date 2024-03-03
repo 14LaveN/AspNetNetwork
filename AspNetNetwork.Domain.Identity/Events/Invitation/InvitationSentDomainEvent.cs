@@ -11,7 +11,7 @@ public sealed class InvitationSentDomainEvent : IDomainEvent
     /// Initializes a new instance of the <see cref="InvitationSentDomainEvent"/> class.
     /// </summary>
     /// <param name="invitation">The invitation.</param>
-    internal InvitationSentDomainEvent(Entities.Invitation invitation) => Invitation = invitation;
+    public InvitationSentDomainEvent(Entities.Invitation invitation) => Invitation = invitation;
 
     /// <summary>
     /// Gets the invitation.

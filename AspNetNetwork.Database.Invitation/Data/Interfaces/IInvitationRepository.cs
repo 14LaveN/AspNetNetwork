@@ -1,4 +1,5 @@
 ﻿using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
+using AspNetNetwork.Domain.Common.Core.Primitives.Result;
 using AspNetNetwork.Domain.Identity.Entities;
 
 namespace AspNetNetwork.Database.Invitation.Data.Interfaces;
@@ -36,4 +37,14 @@ public interface IInvitationRepository
     /// <param name="utcNow">The current date and time in UTC format.</param>
     /// <returns>The completed task.</returns>
     Task RemoveInvitationsForGroupEventAsync(Domain.Identity.Entities.GroupEvent groupEvent, DateTime utcNow);
+
+    /// <summary>
+    /// Invites the specified user to the event.
+    /// </summary>
+    /// <param name="groupEvent">The group event.</param>
+    /// <param name="user">The user to be invited.</param>
+    /// <returns>The result that contains an invitation or an error.</returns>
+    Task<Result<Domain.Identity.Entities.Invitation>> InviteAsync(
+        GroupEvent groupEvent,
+        User user);
 }

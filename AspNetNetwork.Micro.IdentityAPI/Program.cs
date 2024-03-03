@@ -62,7 +62,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors();
 
-UseMetrics(app);
+UseMetrics();
 
 app.UseHttpsRedirection();
 app.UseRouting();
@@ -82,7 +82,7 @@ app.UseEndpoints(endpoints =>
 
 app.MapControllers();
 
-UseCustomMiddlewares(app);
+UseCustomMiddlewares();
 
 
 app.Run();
@@ -92,24 +92,24 @@ return;
 
 #region UseMiddlewaresRegion
 
-void UseCustomMiddlewares(WebApplication webApplication)
+void UseCustomMiddlewares()
 {
-    if (webApplication is null)
+    if (app is null)
         throw new ArgumentException();
 
-    webApplication.UseMiddleware<RequestLoggingMiddleware>(webApplication.Logger);
-    webApplication.UseMiddleware<ResponseCachingMiddleware>();
+    app.UseMiddleware<RequestLoggingMiddleware>(app.Logger);
+    app.UseMiddleware<ResponseCachingMiddleware>();
 }
 
-void UseMetrics(WebApplication webApplication)
+void UseMetrics()
 {
-    if (webApplication is null)
+    if (app is null)
         throw new ArgumentException();
 
-    webApplication.UseMetricServer();
-    webApplication.UseHttpMetrics();
-    webApplication.UsePrometheusServer();
-    webApplication.UsePrometheusRequestDurations();
+    app.UseMetricServer();
+    app.UseHttpMetrics();
+    app.UsePrometheusServer();
+    app.UsePrometheusRequestDurations();
 }
 
 #endregion

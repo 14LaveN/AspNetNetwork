@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lMb/opA96cFmibFcntKB39fGUpr4+Ol3ptBhG5l7D2SHZqq99pYv8e7ZGoEyGX3vuC8Sbv8Tx27+bFtZ1mHybg==",
+  "dgSpecHash": "A7qqAVE5BN8yAi2Wi3fus3syBRxJws0Lt45zcE2BJGWHnuqSla+lIOF6PpiaGmTIrUuLdFHftWUh5K0pW9+mJg==",
   "success": false,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.BackgroundTasks\\AspNetNetwork.BackgroundTasks.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
@@ -140,6 +141,24 @@
       "level": "Error",
       "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.Configuration.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Application -> AspNetNetwork.Email -> Microsoft.Extensions.Configuration.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.Configuration.Abstractions (>= 8.0.0)",
       "libraryId": "Microsoft.Extensions.Configuration.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.Configuration.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.RabbitMq -> AspNetNetwork.Database.Invitation -> Microsoft.Extensions.Configuration.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.Configuration.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.Configuration.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.RabbitMq -> AspNetNetwork.Database.Invitation -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
       "targetGraphs": [
         "net8.0"
       ]
@@ -400,6 +419,78 @@
       "code": "NU1605",
       "level": "Error",
       "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.RabbitMq -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Logging 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.Options 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Database.Message -> AspNetNetwork.Database.Common -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Identity.Core 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Options 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Database.Message -> AspNetNetwork.Database.Common -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Logging 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Database.Message -> AspNetNetwork.Database.Common -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Logging 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.Logging.Abstractions 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Database.Message -> AspNetNetwork.Database.Common -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Logging 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.Options 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Database.Message -> AspNetNetwork.Domain.Message -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Identity.Core 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Options 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Database.Message -> AspNetNetwork.Domain.Message -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Logging 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Database.Message -> AspNetNetwork.Domain.Message -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Logging 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.Logging.Abstractions 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 9.0.0-preview.1.24080.9 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n AspNetNetwork.BackgroundTasks -> AspNetNetwork.Database.Message -> AspNetNetwork.Domain.Message -> AspNetNetwork.Domain.Identity -> Microsoft.Extensions.Identity.Stores 9.0.0-preview.1.24081.5 -> Microsoft.Extensions.Logging 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.Options 9.0.0-preview.1.24080.9 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-preview.1.24080.9) \r\n AspNetNetwork.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
       "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
       "targetGraphs": [
         "net8.0"

@@ -23,7 +23,9 @@ public sealed class MessageDbContext
     /// <param name="mediator"></param>
     public MessageDbContext(DbContextOptions dbContextOptions, IMediator mediator)
         : base(dbContextOptions, mediator){}
-    
+
+    public MessageDbContext() { }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseNpgsql("Server=localhost;Port=5433;Database=PAGenericDb;User Id=postgres;Password=1111;");

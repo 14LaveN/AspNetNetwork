@@ -17,3 +17,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Common\obj\Debug\net8.0\r
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Common\obj\Debug\net8.0\AspNetNetwork.Database.Common.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Common\obj\Debug\net8.0\AspNetNetwork.Database.Common.genruntimeconfig.cache
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Common\obj\Debug\net8.0\ref\AspNetNetwork.Database.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Common\obj\Debug\net8.0\AspNetNetwork.Database.Common.sourcelink.json

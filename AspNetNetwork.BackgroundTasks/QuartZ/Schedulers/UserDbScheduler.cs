@@ -6,7 +6,7 @@ using AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
 namespace AspNetNetwork.BackgroundTasks.QuartZ.Schedulers;
 
 /// <summary>
-/// Represents the save metrics scheduler class.
+/// Represents the user database scheduler class.
 /// </summary>
 public sealed class UserDbScheduler
     : AbstractScheduler<UserDbJob>;

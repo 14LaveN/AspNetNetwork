@@ -17,3 +17,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8.0\refint\AspNetNetwork.Database.GroupEvent.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8.0\AspNetNetwork.Database.GroupEvent.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8.0\ref\AspNetNetwork.Database.GroupEvent.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8.0\AspNetNetwork.Database.GroupEvent.sourcelink.json

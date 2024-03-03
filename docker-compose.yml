@@ -9,6 +9,19 @@
     depends_on:
       - redis
       - prometheus
+      - mongodb
+  
+  aspnetnetwork-micro-messagingapi:
+    image: aspnetnetwork-micro-messagingapi
+    build:
+      context: .
+      dockerfile: AspNetNetwork.Micro.MessagingAPI/Dockerfile
+    ports:
+      - 7299:80
+    depends_on:
+      - redis
+      - prometheus
+      - mongodb 
 
   redis:
     image: redis:latest
@@ -78,3 +91,4 @@ volumes:
   elasticsearch-data:
   redis-data:
   mongodb_data:
+

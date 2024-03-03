@@ -1029,3 +1029,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Web\obj\Debug\net8.0\AspNetNetwork
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Web\obj\Debug\net8.0\refint\AspNetNetwork.Web.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Web\obj\Debug\net8.0\AspNetNetwork.Web.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Web\obj\Debug\net8.0\ref\AspNetNetwork.Web.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Web\obj\Debug\net8.0\AspNetNetwork.Web.sourcelink.json

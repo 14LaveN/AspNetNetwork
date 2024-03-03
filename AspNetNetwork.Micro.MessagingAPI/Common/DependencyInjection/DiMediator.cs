@@ -1,4 +1,7 @@
 using AspNetNetwork.Application.Core.Behaviours;
+using AspNetNetwork.Micro.MessagingAPI.Mediatr.Behaviors;
+using AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage;
+using AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage;
 using MediatR;
 using MediatR.NotificationPublishers;
 
@@ -22,11 +25,14 @@ public static class DiMediator
         {
             x.RegisterServicesFromAssemblyContaining<Program>();
 
-           // x.RegisterServicesFromAssemblies(typeof(RegisterCommand).Assembly,
-           //     typeof(RegisterCommandHandler).Assembly);
+            x.RegisterServicesFromAssemblies(typeof(CreateMessageCommand).Assembly,
+                typeof(CreateMessageCommandHandler).Assembly);
+            
+            x.RegisterServicesFromAssemblies(typeof(UpdateMessageCommand).Assembly,
+                typeof(UpdateMessageCommandHandler).Assembly);
             
             x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
-            //x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(UserTransactionBehaviour<,>));
+            x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(MessageTransactionBehavior<,>));
             x.AddBehavior(typeof(IPipelineBehavior<,>), typeof(MetricsBehaviour<,>));
             x.AddOpenBehavior(typeof(QueryCachingBehavior<,>));
             x.NotificationPublisher = new ForeachAwaitPublisher();

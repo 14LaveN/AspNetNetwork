@@ -19,3 +19,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Invitation\obj\Debug\net8
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Invitation\obj\Debug\net8.0\AspNetNetwork.Database.Invitation.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Invitation\obj\Debug\net8.0\AspNetNetwork.Database.Invitation.genruntimeconfig.cache
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Invitation\obj\Debug\net8.0\ref\AspNetNetwork.Database.Invitation.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Invitation\obj\Debug\net8.0\AspNetNetwork.Database.Invitation.sourcelink.json

@@ -23,6 +23,14 @@ public static class ApiRoutes
     }
     
     /// <summary>
+    /// Contains the message routes.
+    /// </summary>
+    public static class Message
+    {
+        public const string Create = "create-message";
+    }
+    
+    /// <summary>
     /// Contains the authentication routes.
     /// </summary>
     public static class Authentication

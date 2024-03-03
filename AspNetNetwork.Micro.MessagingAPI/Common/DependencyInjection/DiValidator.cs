@@ -1,3 +1,7 @@
+using AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage;
+using AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage;
+using FluentValidation;
+
 namespace AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection;
 
 public static class DiValidator
@@ -14,8 +18,8 @@ public static class DiValidator
             throw new ArgumentNullException(nameof(services));
         }
         
-        //TODO services.AddScoped<IValidator<LoginCommand>, LoginCommandValidator>();
-        //TODO services.AddScoped<IValidator<RegisterCommand>, RegisterCommandValidator>();
+        services.AddScoped<IValidator<CreateMessageCommand>, CreateMessageCommandValidator>();
+        services.AddScoped<IValidator<UpdateMessageCommand>, UpdateMessageCommandValidator>();
         
         return services;
     }

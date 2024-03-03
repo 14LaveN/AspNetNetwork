@@ -2,8 +2,11 @@
 using Microsoft.Data.SqlClient;
 using AspNetNetwork.Database.Common;
 using AspNetNetwork.Database.Invitation.Data.Interfaces;
+using AspNetNetwork.Domain.Common.Core.Errors;
+using AspNetNetwork.Domain.Common.Core.Primitives.Result;
 using AspNetNetwork.Domain.Entities;
 using AspNetNetwork.Domain.Identity.Entities;
+using AspNetNetwork.Domain.Identity.Events.Invitation;
 
 namespace AspNetNetwork.Database.Invitation.Data.Repositories;
 
@@ -17,9 +20,25 @@ internal sealed class InvitationRepository : GenericRepository<Domain.Identity.E
     /// </summary>
     /// <param name="dbContext">The database context.</param>
     public InvitationRepository(BaseDbContext<Domain.Identity.Entities.Invitation> dbContext)
-        : base(dbContext)
+        : base(dbContext) { }
+
+    /// <inheritdoc />
+    public async Task<Result<Domain.Identity.Entities.Invitation>> InviteAsync(
+        GroupEvent groupEvent,
+        User user)
     {
+        if (await CheckIfInvitationAlreadySentAsync(groupEvent, user))
+        {
+            return Result.Failure<Domain.Identity.Entities.Invitation>(DomainErrors.GroupEvent.InvitationAlreadySent);
+        }
+
+        var invitation = new Domain.Identity.Entities.Invitation(groupEvent, user);
+
+        invitation.AddDomainEvent(new InvitationSentDomainEvent(invitation));
+
+        return invitation;
     }
+
 
     /// <inheritdoc />
     public async Task<bool> CheckIfInvitationAlreadySentAsync(GroupEvent groupEvent, User user) =>

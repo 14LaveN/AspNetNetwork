@@ -12,6 +12,8 @@ namespace AspNetNetwork.Domain.Identity.Entities;
 /// </summary>
 public sealed class GroupEvent : Event
 {
+    //TODO Change all db context to one which implement IDbContext.
+    
     /// <summary>
     /// Initializes a new instance of the <see cref="GroupEvent"/> class.
     /// </summary>
@@ -38,13 +40,6 @@ public sealed class GroupEvent : Event
     /// Navigation field.
     /// </summary>
     public ICollection<Attendee>? Attendees { get; set; }
-
-    //TODO Create IDomainEventHandler where author and attendee will save group event and update for add attendees and work with them in bg tasks.
-    //TODO In publisher updating group event.
-    //TODO Create group event in publishers.
-    //TODO Create bg task where group event sends emails.
-    //TODO Thinking about Processed flag in group event and include him to group event entity.
-    ///TODO When event cancelled send the notification author and attendees.
     
     /// <summary>
     /// Add to group event attendee.

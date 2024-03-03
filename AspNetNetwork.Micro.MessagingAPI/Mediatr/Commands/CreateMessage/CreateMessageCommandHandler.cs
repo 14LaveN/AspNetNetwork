@@ -31,10 +31,6 @@ public sealed class CreateMessageCommandHandler
     private readonly ILogger<CreateMessageCommandHandler> _logger;
     private readonly IUserIdentifierProvider _userIdentifierProvider;
     private readonly IUserRepository _userRepository;
-    private readonly ISender _sender;
-    private readonly IGroupEventRepository _groupEventRepository;
-    private readonly IInvitationRepository _invitationRepository;
-    private readonly IUnitOfWork<Invitation> _invitationUnitOfWork;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="CreateMessageCommandHandler"/> class.
@@ -43,31 +39,17 @@ public sealed class CreateMessageCommandHandler
     /// <param name="logger">The logger.</param>
     /// <param name="userIdentifierProvider">The user identifier provider.</param>
     /// <param name="userRepository">The user repository.</param>
-    /// <param name="sender">The sender.</param>
-    /// <param name="groupEventRepository">The group event repository.</param>
-    /// <param name="invitationRepository">The invitation repository.</param>
-    /// <param name="invitationUnitOfWork">The invitation unit of work.</param>
     public CreateMessageCommandHandler(
         IMessagesRepository messagesRepository,
         ILogger<CreateMessageCommandHandler> logger,
         IUserIdentifierProvider userIdentifierProvider,
-        IUserRepository userRepository, 
-        ISender sender,
-        IGroupEventRepository groupEventRepository,
-        IInvitationRepository invitationRepository,
-        IUnitOfWork<Invitation> invitationUnitOfWork)
+        IUserRepository userRepository)
     {
         _messagesRepository = messagesRepository;
         _logger = logger;
         _userIdentifierProvider = userIdentifierProvider;
         _userRepository = userRepository;
-        _sender = sender;
-        _groupEventRepository = groupEventRepository;
-        _invitationRepository = invitationRepository;
-        _invitationUnitOfWork = invitationUnitOfWork;
     }
-    
-    //TODO Create group event which create relationships with Author and Recipient.
     
     /// <inheritdoc />
     public async Task<IBaseResponse<Result>> Handle(

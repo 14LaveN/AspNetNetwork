@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UogO6HxNSiywko5YSC8o1smG8Gv1wlDKcrvc1fxKL0270hUR+c4X1PIGC1VmYuBgRnywilG+Prw+3ppkUr4ieA==",
+  "dgSpecHash": "QiZ+gWacUix0oCZT+bFhdQ6NvQwM0XO985+r4UgjAaCO7fm6SW3W3EfmSG+6LRIxG5ON7vc0OsfGRoAlxh7pGQ==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Tests.IdentityAPI\\AspNetNetwork.Tests.IdentityAPI.csproj",
   "expectedPackageFiles": [

@@ -18,7 +18,7 @@ public interface IDbContext<T>
     /// <typeparam name="TEntity">The entity type.</typeparam>
     /// <returns>The database set for the specified entity type.</returns>
     DbSet<TEntity> Set<TEntity>()
-        where TEntity : Entity;
+        where TEntity : class;
 
     /// <summary>
     /// Gets the entity with the specified identifier.

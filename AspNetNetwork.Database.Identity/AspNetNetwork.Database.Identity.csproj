@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\AspNetNetwork.Database.Common\AspNetNetwork.Database.Common.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Domain.Common\AspNetNetwork.Domain.Common.csproj" />
       <ProjectReference Include="..\AspNetNetwork.Domain.Identity\AspNetNetwork.Domain.Identity.csproj" />
     </ItemGroup>

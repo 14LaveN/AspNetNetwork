@@ -1,3 +1,4 @@
+using AspNetNetwork.Database.Common;
 using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
 using AspNetNetwork.Domain.Common.ValueObjects;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,7 @@ using IUserRepository = AspNetNetwork.Database.Identity.Data.Interfaces.IUserRep
 
 namespace AspNetNetwork.Database.Identity.Data.Repositories;
 
-public class UserRepository(UserDbContext userDbContext)
+public class UserRepository(BaseDbContext<Event> userDbContext)
     : IUserRepository
 {
     public async Task<Maybe<User>> GetByIdAsync(Guid userId) =>

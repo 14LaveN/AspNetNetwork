@@ -16,7 +16,7 @@ public sealed class GroupEventForAttendeesSpecification : Specification<Domain.I
     /// Initializes a new instance of the <see cref="GroupEventForAttendeesSpecification"/> class.
     /// </summary>
     /// <param name="attendees">The attendees.</param>
-    public GroupEventForAttendeesSpecification(IReadOnlyCollection<Attendee> attendees) =>
+    public GroupEventForAttendeesSpecification(IReadOnlyCollection<Domain.Identity.Entities.Attendee> attendees) =>
         _groupEventIds = attendees.Select(attendee => attendee.EventId).Distinct().ToArray();
 
     /// <inheritdoc />

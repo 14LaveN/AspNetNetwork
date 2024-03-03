@@ -1,12 +1,15 @@
 global:
   scrape_interval: 15s
+  scrape_timeout: 10s
+  evaluation_interval: 15s
 
 scrape_configs:
   - job_name: 'asp-net-network'
     metrics_path: '/metrics'
     scheme: 'http'
+    honor_timestamps: true
     static_configs:
-      - targets: ['localhost:7187']
+      - targets: ['host.docker.internal:7187']
 
   - job_name: 'prometheus'
     static_configs:

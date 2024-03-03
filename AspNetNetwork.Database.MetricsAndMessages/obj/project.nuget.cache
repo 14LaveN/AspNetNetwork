@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "53oxTtm5qQSeC6n6zx8Nyoel7o5ewrfkCFreg5sttfoFGrtmZlB2CVVSPzaqCnXTMuEW3c2Kmad5Gc+XT5rIvw==",
+  "dgSpecHash": "xsaOORmM1BCVPWraxbddcJWZZK1JVfU9VV7JIbAGa5ffHuRSb00UeRdE8dEx7NdcC9pavI6MooXjSEvzoEARFw==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.MetricsAndMessages\\AspNetNetwork.Database.MetricsAndMessages.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.2\\microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.2\\microsoft.entityframeworkcore.sqlserver.8.0.2.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.caching.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.configuration.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",

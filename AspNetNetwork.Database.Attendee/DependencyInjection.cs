@@ -26,24 +26,11 @@ public static class DependencyInjection
         
         var connectionString = configuration.GetConnectionString("PAGenericDb");
         
-        services.AddDbContext<AttendeeDbContext>(o => 
-            o.UseNpgsql(connectionString, act 
-                    =>
-                {
-                    act.EnableRetryOnFailure(3);
-                    act.CommandTimeout(30);
-                })
-                .LogTo(Console.WriteLine)
-                .EnableServiceProviderCaching()
-                .EnableSensitiveDataLogging()
-                .EnableDetailedErrors());
-
         if (connectionString is not null)
             services.AddHealthChecks()
                 .AddNpgSql(connectionString);
 
         services.AddScoped<IAttendeeRepository, AttendeeRepository>();
-        services.AddScoped<BaseDbContext<Domain.Identity.Entities.Attendee>, AttendeeDbContext>();
         services.AddScoped<IUnitOfWork<Domain.Identity.Entities.Attendee>, UnitOfWork<Domain.Identity.Entities.Attendee>>();
 
         return services;

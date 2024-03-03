@@ -13,7 +13,6 @@ namespace AspNetNetwork.Database.Attendee.Data.Repositories;
 /// </summary>
 internal sealed class AttendeeRepository : GenericRepository<Domain.Identity.Entities.Attendee>, IAttendeeRepository
 {
-    private readonly UserDbContext _userDbContext;
     private readonly BaseDbContext<GroupEvent> _groupEventDbContext;
 
     /// <summary>
@@ -21,15 +20,12 @@ internal sealed class AttendeeRepository : GenericRepository<Domain.Identity.Ent
     /// </summary>
     /// <param name="dbContext">The database context.</param>
     /// <param name="groupEventDbContext">The group event database context.</param>
-    /// <param name="userDbContext">The user database context.</param>
     public AttendeeRepository(
         BaseDbContext<Domain.Identity.Entities.Attendee> dbContext,
-        BaseDbContext<GroupEvent> groupEventDbContext,
-        UserDbContext userDbContext)
+        BaseDbContext<GroupEvent> groupEventDbContext)
         : base(dbContext)
     {
         _groupEventDbContext = groupEventDbContext;
-        _userDbContext = userDbContext;
     }
 
     /// <inheritdoc />
@@ -52,7 +48,7 @@ internal sealed class AttendeeRepository : GenericRepository<Domain.Identity.Ent
             from @event in _groupEventDbContext.Set<GroupEvent>()
             join attendee in DbContext.Set<Domain.Identity.Entities.Attendee>()
                 on groupEvent.Id equals attendee.EventId
-            join user in _userDbContext.Set<User>()
+            join user in _groupEventDbContext.Set<User>()
                 on attendee.UserId equals user.Id
             where @event.Id == groupEvent.Id && attendee.UserId != groupEvent.UserId
             select new

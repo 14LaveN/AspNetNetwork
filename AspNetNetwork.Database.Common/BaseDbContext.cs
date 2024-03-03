@@ -1,3 +1,4 @@
+using System.Reflection;
 using MediatR;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,9 @@ using AspNetNetwork.Domain.Common.Core.Abstractions;
 using AspNetNetwork.Domain.Common.Core.Events;
 using AspNetNetwork.Domain.Common.Core.Primitives;
 using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
+using AspNetNetwork.Domain.Identity.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace AspNetNetwork.Database.Common;
 
@@ -15,7 +19,7 @@ namespace AspNetNetwork.Database.Common;
 /// </summary>
 /// <typeparam name="T">The entity type.</typeparam>
 public class BaseDbContext<T>
-    : DbContext, IDbContext<T>
+    : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IDbContext<T>
     where T : Entity
 {
     private readonly IMediator _mediator = null!;
@@ -36,13 +40,23 @@ public class BaseDbContext<T>
     /// <inheritdoc />
     public BaseDbContext(DbContextOptions dbContextOptions)
         : base(dbContextOptions) { }
-    
+
     /// <inheritdoc />
     public BaseDbContext() { }
+    
+    /// <inheritdoc />
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+        modelBuilder.HasDefaultSchema("dbo");
+        
+        base.OnModelCreating(modelBuilder);
+    }
 
     /// <inheritdoc />
     public new DbSet<TEntity> Set<TEntity>()
-        where TEntity : Entity
+        where TEntity : class
         => base.Set<TEntity>();
 
     /// <exception cref="ArgumentNullException"></exception>
@@ -146,7 +160,8 @@ public class BaseDbContext<T>
                 return;
             }
 
-            foreach (ReferenceEntry referenceEntry in entityEntry.References.Where(r => r.TargetEntry.State == EntityState.Deleted))
+            foreach (ReferenceEntry referenceEntry in entityEntry.References
+                         .Where(r => r.TargetEntry!.State == EntityState.Deleted))
             {
                 if (referenceEntry.TargetEntry != null)
                 {

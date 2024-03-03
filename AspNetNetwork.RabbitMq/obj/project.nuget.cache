@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J+GEG93UJ8c0zG4N8QVrrKIHj5j49OY9CipJXVdnRQvoc7KO2OOQWD64AoBBUAb+5RmiVWpcKlrxLjtofmYQGQ==",
+  "dgSpecHash": "2Dl2rrzHGwo+E5NvkwkzG6jhuO+wB7V8l6b6HWUtlyZSxb8laRc7MRlUrR/c5vKtJnfsnyp6nQRzb0or+KAnYQ==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.RabbitMq\\AspNetNetwork.RabbitMq.csproj",
   "expectedPackageFiles": [

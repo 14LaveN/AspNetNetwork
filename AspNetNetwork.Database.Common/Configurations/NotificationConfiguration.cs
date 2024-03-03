@@ -1,10 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AspNetNetwork.Domain.Identity.Enumerations;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using AspNetNetwork.Domain.Identity.Enumerations;
 using Event = AspNetNetwork.Domain.Identity.Entities.Event;
 using User = AspNetNetwork.Domain.Identity.Entities.User;
 
-namespace AspNetNetwork.Database.Notification.Data;
+namespace AspNetNetwork.Database.Common.Configurations;
 
 /// <summary>
 /// Represents the configuration for the <see cref="Notification"/> entity.

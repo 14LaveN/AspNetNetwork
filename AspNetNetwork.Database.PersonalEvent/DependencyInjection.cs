@@ -26,20 +26,7 @@ public static class DependencyInjection
         
         var connectionString = configuration.GetConnectionString("TTGenericDb");
         
-        services.AddDbContext<PersonalEventDbContext>(o => 
-            o.UseNpgsql(connectionString, act 
-                    =>
-                {
-                    act.EnableRetryOnFailure(3);
-                    act.CommandTimeout(30);
-                })
-                .LogTo(Console.WriteLine)
-                .EnableServiceProviderCaching()
-                .EnableSensitiveDataLogging()
-                .EnableDetailedErrors());
-        
         services.AddScoped<IPersonalEventRepository, PersonalEventRepository>();
-        services.AddScoped<BaseDbContext<Domain.Identity.Entities.PersonalEvent>, PersonalEventDbContext>();
         services.AddScoped<IUnitOfWork<Domain.Identity.Entities.PersonalEvent>, UnitOfWork<Domain.Identity.Entities.PersonalEvent>>();
 
         return services;

@@ -1179,6 +1179,7 @@
           "AspNetNetwork.Domain.Common": "1.0.0",
           "AspNetNetwork.Domain.Identity": "1.0.0",
           "MediatR": "12.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2",
           "Microsoft.Data.SqlClient": "5.2.0-preview5.24024.3",
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2"
@@ -1195,6 +1196,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AspNetCore.HealthChecks.NpgSql": "8.0.0",
+          "AspNetNetwork.Database.Common": "1.0.0",
           "AspNetNetwork.Domain.Common": "1.0.0",
           "AspNetNetwork.Domain.Identity": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2",

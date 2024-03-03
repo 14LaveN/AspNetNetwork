@@ -27,18 +27,6 @@ public static class DependencyInjection
         }
         
         var connectionString = configuration.GetConnectionString("TTGenericDb");
-        
-        services.AddDbContext<NotificationDbContext>(o => 
-            o.UseNpgsql(connectionString, act 
-                    =>
-                {
-                    act.EnableRetryOnFailure(3);
-                    act.CommandTimeout(30);
-                })
-                .LogTo(Console.WriteLine)
-                .EnableServiceProviderCaching()
-                .EnableSensitiveDataLogging()
-                .EnableDetailedErrors());
 
         if (connectionString is not null)
             services.AddHealthChecks()
@@ -47,7 +35,6 @@ public static class DependencyInjection
         services.AddTransient<BaseDbContext<Event>>();
         
         services.AddScoped<INotificationRepository, NotificationRepository>();
-        services.AddScoped<BaseDbContext<Domain.Identity.Entities.Notification>, NotificationDbContext>();
         services.AddScoped<IUnitOfWork<Domain.Identity.Entities.Notification>, UnitOfWork<Domain.Identity.Entities.Notification>>();
 
         return services;

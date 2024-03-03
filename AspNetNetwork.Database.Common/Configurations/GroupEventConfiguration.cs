@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AspNetNetwork.Database.GroupEvent.Data;
+namespace AspNetNetwork.Database.Common.Configurations;
 
 public class GroupEventConfiguration : IEntityTypeConfiguration<Domain.Identity.Entities.GroupEvent>
 {

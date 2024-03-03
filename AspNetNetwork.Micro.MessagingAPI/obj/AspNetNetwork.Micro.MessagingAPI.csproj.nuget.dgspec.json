@@ -505,6 +505,10 @@
               "target": "Package",
               "version": "[12.2.0, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0-preview5.24024.3, )"
@@ -656,6 +660,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              },
               "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj": {
                 "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj"
               },
@@ -1572,6 +1579,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "App.Metrics": {
+              "target": "Package",
+              "version": "[4.4.0-preview.0.4, )"
+            },
+            "App.Metrics.AspNetCore.Endpoints": {
+              "target": "Package",
+              "version": "[4.4.0-preview.0.10, )"
+            },
+            "App.Metrics.AspNetCore.Tracking": {
+              "target": "Package",
+              "version": "[4.4.0-preview.0.10, )"
+            },
+            "App.Metrics.Formatters.Prometheus": {
+              "target": "Package",
+              "version": "[4.4.0-preview.0.10, )"
+            },
             "AspNetCore.HealthChecks.UI.Client": {
               "target": "Package",
               "version": "[8.0.0, )"

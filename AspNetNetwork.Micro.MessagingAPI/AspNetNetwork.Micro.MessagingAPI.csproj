@@ -16,6 +16,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="App.Metrics" Version="4.4.0-preview.0.4" />
+      <PackageReference Include="App.Metrics.AspNetCore.Endpoints" Version="4.4.0-preview.0.10" />
+      <PackageReference Include="App.Metrics.AspNetCore.Tracking" Version="4.4.0-preview.0.10" />
+      <PackageReference Include="App.Metrics.Formatters.Prometheus" Version="4.4.0-preview.0.10" />
       <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.0" />
       <PackageReference Include="MediatR" Version="12.2.0" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />

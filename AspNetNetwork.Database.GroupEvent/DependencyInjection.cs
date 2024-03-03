@@ -30,24 +30,11 @@ public static class DependencyInjection
         
         var connectionString = configuration.GetConnectionString("TTGenericDb");
         
-        services.AddDbContext<GroupEventDbContext>(o => 
-            o.UseNpgsql(connectionString, act 
-                    =>
-                {
-                    act.EnableRetryOnFailure(3);
-                    act.CommandTimeout(30);
-                })
-                .LogTo(Console.WriteLine)
-                .EnableServiceProviderCaching()
-                .EnableSensitiveDataLogging()
-                .EnableDetailedErrors());
-        
         if (connectionString is not null)
             services.AddHealthChecks()
                 .AddNpgSql(connectionString);
         
         services.AddScoped<IGroupEventRepository, GroupEventRepository>();
-        services.AddScoped<BaseDbContext<Domain.Identity.Entities.GroupEvent>, GroupEventDbContext>();
         services.AddScoped<IUnitOfWork<Domain.Identity.Entities.GroupEvent>, UnitOfWork<Domain.Identity.Entities.GroupEvent>>();
 
         return services;

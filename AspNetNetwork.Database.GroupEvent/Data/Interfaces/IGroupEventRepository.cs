@@ -27,7 +27,7 @@ public interface IGroupEventRepository
     /// </summary>
     /// <param name="attendees">The attendees to get the group events for.</param>
     /// <returns>The readonly collection of group events with the specified identifiers.</returns>
-    Task<IReadOnlyCollection<Domain.Identity.Entities.GroupEvent>> GetForAttendeesAsync(IReadOnlyCollection<Attendee> attendees);
+    Task<IReadOnlyCollection<Domain.Identity.Entities.GroupEvent>> GetForAttendeesAsync(IReadOnlyCollection<Domain.Identity.Entities.Attendee> attendees);
 
     /// <summary>
     /// Gets the group event with the specified name.

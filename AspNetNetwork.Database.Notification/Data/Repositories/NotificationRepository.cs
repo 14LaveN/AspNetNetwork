@@ -12,7 +12,6 @@ namespace AspNetNetwork.Database.Notification.Data.Repositories;
 /// </summary>
 internal sealed class NotificationRepository : GenericRepository<Domain.Identity.Entities.Notification>, INotificationRepository
 {
-    private readonly UserDbContext _userDbContext;
     private readonly BaseDbContext<Event> _eventDbContext;
 
     /// <summary>
@@ -20,15 +19,12 @@ internal sealed class NotificationRepository : GenericRepository<Domain.Identity
     /// </summary>
     /// <param name="dbContext">The database context.</param>
     /// <param name="eventDbContext">The some event database context.</param>
-    /// <param name="userDbContext">The user database context.</param>
     public NotificationRepository(
         BaseDbContext<Domain.Identity.Entities.Notification> dbContext,
-        BaseDbContext<Event> eventDbContext,
-        UserDbContext userDbContext)
+        BaseDbContext<Event> eventDbContext)
         : base(dbContext)
     {
         _eventDbContext = eventDbContext;
-        _userDbContext = userDbContext;
     }
 
     /// <inheritdoc />
@@ -44,7 +40,7 @@ internal sealed class NotificationRepository : GenericRepository<Domain.Identity
                 from notification in DbContext.Set<Domain.Identity.Entities.Notification>()
                 join @event in _eventDbContext.Set<Event>()
                     on notification.EventId equals @event.Id
-                join user in _userDbContext.Set<User>()
+                join user in _eventDbContext.Set<User>()
                     on notification.UserId equals user.Id
                 where !notification.Sent &&
                       notification.DateTimeUtc >= startTime &&

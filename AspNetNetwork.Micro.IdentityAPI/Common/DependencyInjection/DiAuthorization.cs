@@ -1,6 +1,7 @@
 using System.Text;
 using System.Text.Json;
 using AspNetNetwork.Application.Core.Settings.User;
+using AspNetNetwork.Database.Common;
 using AspNetNetwork.Database.Identity;
 using AspNetNetwork.Domain.Identity.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -34,7 +35,7 @@ public static class DiAuthorization
             {
                 options.User.RequireUniqueEmail = false;
             })
-            .AddEntityFrameworkStores<UserDbContext>()
+            .AddEntityFrameworkStores<BaseDbContext<Event>>()
             .AddDefaultTokenProviders();
         
         services.AddAuthentication(opt => {

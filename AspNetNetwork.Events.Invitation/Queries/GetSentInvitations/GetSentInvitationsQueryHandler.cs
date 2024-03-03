@@ -17,7 +17,6 @@ internal sealed class GetSentInvitationsQueryHandler
     : IQueryHandler<GetSentInvitationsQuery, Maybe<SentInvitationsListResponse>>
 {
     private readonly BaseDbContext<Domain.Identity.Entities.Invitation> _invitationDbContext;
-    private readonly UserDbContext _userDbContext;
     private readonly BaseDbContext<GroupEvent> _groupEventDbContext;
 
     /// <summary>
@@ -27,11 +26,9 @@ internal sealed class GetSentInvitationsQueryHandler
     /// <param name="userDbContext">The users database context.</param>
     /// <param name="groupEventDbContext">The group events database context.</param>
     public GetSentInvitationsQueryHandler(
-        UserDbContext userDbContext,
         BaseDbContext<Domain.Identity.Entities.Invitation> invitationDbContext,
         BaseDbContext<GroupEvent> groupEventDbContext)
     {
-        _userDbContext = userDbContext;
         _invitationDbContext = invitationDbContext;
         _groupEventDbContext = groupEventDbContext;
     }
@@ -48,11 +45,11 @@ internal sealed class GetSentInvitationsQueryHandler
 
         SentInvitationsListResponse.SentInvitationModel[] invitations = await (
             from invitation in _invitationDbContext.Set<Domain.Identity.Entities.Invitation>().AsNoTracking()
-            join friend in _userDbContext.Set<User>().AsNoTracking()
+            join friend in _invitationDbContext.Set<User>().AsNoTracking()
                 on invitation.UserId equals friend.Id
             join groupEvent in _groupEventDbContext.Set<GroupEvent>().AsNoTracking()
                 on invitation.EventId equals groupEvent.Id
-            join user in _userDbContext.Set<User>().AsNoTracking()
+            join user in _invitationDbContext.Set<User>().AsNoTracking()
                 on groupEvent.UserId equals user.Id
             where user.Id == request.UserId &&
                   groupEvent.UserId == request.UserId &&

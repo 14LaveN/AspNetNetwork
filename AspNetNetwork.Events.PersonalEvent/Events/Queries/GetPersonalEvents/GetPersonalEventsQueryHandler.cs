@@ -16,19 +16,15 @@ namespace AspNetNetwork.Events.PersonalEvent.Events.Queries.GetPersonalEvents;
 internal sealed class GetPersonalEventsQueryHandler : IQueryHandler<GetPersonalEventsQuery, Maybe<PagedList<PersonalEventResponse>>>
 {
     private readonly IDbContext<Domain.Identity.Entities.PersonalEvent> _dbContext;
-    private readonly UserDbContext _userDbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GetPersonalEventsQueryHandler"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    /// <param name="userDbContext"></param>
     public GetPersonalEventsQueryHandler(
-        IDbContext<Domain.Identity.Entities.PersonalEvent> dbContext,
-        UserDbContext userDbContext)
+        IDbContext<Domain.Identity.Entities.PersonalEvent> dbContext)
     {
         _dbContext = dbContext;
-        _userDbContext = userDbContext;
     }
 
     /// <inheritdoc />
@@ -45,7 +41,7 @@ internal sealed class GetPersonalEventsQueryHandler : IQueryHandler<GetPersonalE
 
         IQueryable<PersonalEventResponse> personalEventResponses =
             from personalEvent in _dbContext.Set<Domain.Identity.Entities.PersonalEvent>().AsNoTracking()
-            join user in _userDbContext.Set<User>().AsNoTracking()
+            join user in _dbContext.Set<User>().AsNoTracking()
                 on personalEvent.UserId equals user.Id
             where user.Id == request.UserId &&
                   personalEvent.UserId == request.UserId &&

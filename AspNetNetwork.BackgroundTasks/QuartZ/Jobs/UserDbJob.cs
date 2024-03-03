@@ -1,5 +1,7 @@
-﻿using Quartz;
+﻿using AspNetNetwork.Database.Common;
+using Quartz;
 using AspNetNetwork.Database.Identity;
+using AspNetNetwork.Domain.Identity.Entities;
 using static System.Console;
 
 namespace AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
@@ -9,7 +11,7 @@ namespace AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
 /// </summary>
 public sealed class UserDbJob : IJob
 {
-    private readonly UserDbContext _appDbContext = new();
+    private readonly BaseDbContext<Event> _appDbContext = new();
 
     /// <inheritdoc />
     public async Task Execute(IJobExecutionContext context)

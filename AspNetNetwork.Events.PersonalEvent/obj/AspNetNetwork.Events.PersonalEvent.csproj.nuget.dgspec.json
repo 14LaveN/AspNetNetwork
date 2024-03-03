@@ -300,6 +300,10 @@
               "target": "Package",
               "version": "[12.2.0, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0-preview5.24024.3, )"
@@ -367,6 +371,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.Common\\AspNetNetwork.Database.Common.csproj"
+              },
               "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj": {
                 "projectPath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Domain.Common\\AspNetNetwork.Domain.Common.csproj"
               },

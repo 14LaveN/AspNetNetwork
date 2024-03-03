@@ -1,4 +1,6 @@
+using AspNetNetwork.Database.Common;
 using AspNetNetwork.Database.Message;
+using AspNetNetwork.Domain.Identity.Entities;
 using Quartz;
 using static System.Console;
 
@@ -9,7 +11,7 @@ namespace AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
 /// </summary>
 public sealed class MessageDbJob : IJob
 {
-    private readonly MessageDbContext _appDbContext = new();
+    private readonly BaseDbContext<Message> _appDbContext = new();
 
     /// <inheritdoc />
     public async Task Execute(IJobExecutionContext context)

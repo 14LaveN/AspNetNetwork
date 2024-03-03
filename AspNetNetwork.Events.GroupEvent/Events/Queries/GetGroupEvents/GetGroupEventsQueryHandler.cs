@@ -17,19 +17,15 @@ namespace AspNetNetwork.Events.GroupEvent.Events.Queries.GetGroupEvents;
 internal sealed class GetGroupEventsQueryHandler : IQueryHandler<GetGroupEventsQuery, Maybe<PagedList<GroupEventResponse>>>
 {
     private readonly IDbContext<Domain.Identity.Entities.GroupEvent> _dbContext;
-    private readonly UserDbContext _identityDbContext;
-
+    
     /// <summary>
     /// Initializes a new instance of the <see cref="GetGroupEventsQueryHandler"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    /// <param name="identityDbContext"></param>
     public GetGroupEventsQueryHandler(
-        IDbContext<Domain.Identity.Entities.GroupEvent> dbContext,
-        UserDbContext identityDbContext)
+        IDbContext<Domain.Identity.Entities.GroupEvent> dbContext)
     {
         _dbContext = dbContext;
-        _identityDbContext = identityDbContext;
     }
 
     /// <inheritdoc />
@@ -44,7 +40,7 @@ internal sealed class GetGroupEventsQueryHandler : IQueryHandler<GetGroupEventsQ
 
         IQueryable<GroupEventResponse> groupEventResponsesQuery =
             from groupEvent in _dbContext.Set<Domain.Identity.Entities.GroupEvent>().AsNoTracking()
-            join user in _identityDbContext.Set<User>().AsNoTracking()
+            join user in _dbContext.Set<User>().AsNoTracking()
                 on groupEvent.UserId equals user.Id
             where groupEvent.UserId == request.UserId &&
                   !groupEvent.Cancelled &&

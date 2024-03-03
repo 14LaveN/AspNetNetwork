@@ -9,8 +9,6 @@ namespace AspNetNetwork.RabbitMq.Messaging.Messages.Events.Create;
 internal sealed class PublishIntegrationEventOnMessageCreatedDomainEventHandler
     : IDomainEventHandler<MessageCreatedDomainEvent>
 {
-    //TODO Create second domain event handler where will use the invitations attendees and some(look the CreateMessageCommand).
-    
     private readonly IIntegrationEventPublisher _integrationEventPublisher;
 
     /// <summary>

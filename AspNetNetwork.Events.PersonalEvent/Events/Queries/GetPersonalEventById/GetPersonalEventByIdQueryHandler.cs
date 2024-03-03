@@ -15,19 +15,15 @@ namespace AspNetNetwork.Events.PersonalEvent.Events.Queries.GetPersonalEventById
 internal sealed class GetPersonalEventByIdQueryHandler : IQueryHandler<GetPersonalEventByIdQuery, Maybe<DetailedPersonalEventResponse>>
 {
     private readonly IDbContext<Domain.Identity.Entities.PersonalEvent> _dbContext;
-    private readonly UserDbContext _userDbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GetPersonalEventByIdQueryHandler"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    /// <param name="userDbContext"></param>
     public GetPersonalEventByIdQueryHandler(
-        IDbContext<Domain.Identity.Entities.PersonalEvent> dbContext,
-        UserDbContext userDbContext)
+        IDbContext<Domain.Identity.Entities.PersonalEvent> dbContext)
     {
         _dbContext = dbContext;
-        _userDbContext = userDbContext;
     }
 
     /// <inheritdoc />
@@ -42,7 +38,7 @@ internal sealed class GetPersonalEventByIdQueryHandler : IQueryHandler<GetPerson
 
         DetailedPersonalEventResponse? response = await (
             from personalEvent in _dbContext.Set<Domain.Identity.Entities.PersonalEvent>().AsNoTracking()
-            join user in _userDbContext.Set<User>().AsNoTracking()
+            join user in _dbContext.Set<User>().AsNoTracking()
                 on personalEvent.UserId equals user.Id
             where user.Id == request.UserId &&
                   personalEvent.Id == request.PersonalEventId &&

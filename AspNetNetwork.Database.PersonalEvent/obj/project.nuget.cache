@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uJl8ofRbHwQh8tgZ9jPM1j3pYNOy39mVIpIvPPY92j9svREueA4CQFzC+PayPltTa4ZMsT0oNweuLA/Svzv6mA==",
+  "dgSpecHash": "U4SAx62NGUnBpu9LidR7eGl7ZR2E1THWDRywSr9WuPZ2H08aBMYBaY9iozpZnQSp64Gx69eTE4HHEaUyVs1gtA==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\AspNetNetwork\\AspNetNetwork.Database.PersonalEvent\\AspNetNetwork.Database.PersonalEvent.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.0-preview.1.24081.5\\microsoft.aspnetcore.cryptography.internal.9.0.0-preview.1.24081.5.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.0-preview.1.24081.5\\microsoft.aspnetcore.cryptography.keyderivation.9.0.0-preview.1.24081.5.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\8.0.2\\microsoft.aspnetcore.identity.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.0-preview5.24024.3\\microsoft.data.sqlclient.5.2.0-preview5.24024.3.nupkg.sha512",

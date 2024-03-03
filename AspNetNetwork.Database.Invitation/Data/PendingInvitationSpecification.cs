@@ -13,7 +13,7 @@ internal sealed class PendingInvitationSpecification : Specification<Domain.Iden
     private readonly Guid _groupEventId;
     private readonly Guid _userId;
 
-    internal PendingInvitationSpecification(GroupEvent groupEvent, User user)
+    internal PendingInvitationSpecification(Domain.Identity.Entities.GroupEvent groupEvent, User user)
     {
         _groupEventId = groupEvent.Id;
         _userId = user.Id;

@@ -15,22 +15,18 @@ internal sealed class GetAttendeesForGroupEventIdQueryHandler
     : IQueryHandler<GetAttendeesForGroupEventIdQuery, Maybe<AttendeeListResponse>>
 {
     private readonly BaseDbContext<Domain.Identity.Entities.Attendee> _dbContext;
-    private readonly UserDbContext _userDbContext;
     private readonly BaseDbContext<GroupEvent> _groupEventDbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GetAttendeesForGroupEventIdQueryHandler"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    /// <param name="userDbContext">The user database context.</param>
     /// <param name="groupEventDbContext">The group event database context.</param>
     public GetAttendeesForGroupEventIdQueryHandler(
         BaseDbContext<Domain.Identity.Entities.Attendee> dbContext,
-        UserDbContext userDbContext,
         BaseDbContext<GroupEvent> groupEventDbContext)
     {
         _dbContext = dbContext;
-        _userDbContext = userDbContext;
         _groupEventDbContext = groupEventDbContext;
     }
 
@@ -56,7 +52,7 @@ internal sealed class GetAttendeesForGroupEventIdQueryHandler
             from attendee in _dbContext.Set<Domain.Identity.Entities.Attendee>().AsNoTracking()
             join groupEvent in _groupEventDbContext.Set<GroupEvent>().AsNoTracking()
                 on attendee.EventId equals groupEvent.Id
-            join user in _userDbContext.Set<User>().AsNoTracking()
+            join user in _groupEventDbContext.Set<User>().AsNoTracking()
                 on attendee.UserId equals user.Id
             where groupEvent.Id == request.GroupEventId && !groupEvent.Cancelled
             select new AttendeeListResponse.AttendeeModel

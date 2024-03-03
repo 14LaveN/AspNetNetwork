@@ -1,11 +1,9 @@
-﻿using System.Xml.Linq;
-using AspNetNetwork.Domain.Common.ValueObjects;
+﻿using AspNetNetwork.Domain.Common.ValueObjects;
+using AspNetNetwork.Domain.Identity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.Identity.Data;
+namespace AspNetNetwork.Database.Common.Configurations;
 
 /// <summary>
 /// Represents the configuration for the <see cref="User"/> entity.

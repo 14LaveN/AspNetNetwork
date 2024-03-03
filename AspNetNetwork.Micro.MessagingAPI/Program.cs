@@ -1,4 +1,5 @@
 using System.Reflection;
+using App.Metrics.Formatters.Prometheus;
 using AspNetNetwork.Application;
 using AspNetNetwork.Application.ApiHelpers.Configurations;
 using AspNetNetwork.Application.ApiHelpers.Middlewares;
@@ -98,6 +99,15 @@ void UseMetrics()
     if (app is null)
         throw new ArgumentException();
 
+    builder.Host.UseMetricsWebTracking(options => 
+        options.OAuth2TrackingEnabled = true)
+        .UseMetricsEndpoints(options =>
+        {
+            options.EnvironmentInfoEndpointEnabled = true;
+            options.MetricsTextEndpointOutputFormatter = new MetricsPrometheusTextOutputFormatter();
+            options.MetricsEndpointOutputFormatter = new MetricsPrometheusProtobufOutputFormatter();
+        });
+    
     app.UseMetricServer();
     app.UseHttpMetrics();
     app.UsePrometheusServer();

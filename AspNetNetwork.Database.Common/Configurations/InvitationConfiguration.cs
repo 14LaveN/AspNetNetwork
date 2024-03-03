@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Event = AspNetNetwork.Domain.Identity.Entities.Event;
 using User = AspNetNetwork.Domain.Identity.Entities.User;
 
-namespace AspNetNetwork.Database.Invitation.Data;
+namespace AspNetNetwork.Database.Common.Configurations;
 
 /// <summary>
 /// Represents the configuration for the <see cref="Invitation"/> entity.

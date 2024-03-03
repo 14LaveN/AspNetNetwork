@@ -24,18 +24,6 @@ public static class DependencyInjection
         
         var connectionString = configuration.GetConnectionString("TTGenericDb");
         
-        services.AddDbContext<UserDbContext>(o => 
-            o.UseNpgsql(connectionString, act 
-                    =>
-                {
-                    act.EnableRetryOnFailure(3);
-                    act.CommandTimeout(30);
-                })
-                .LogTo(Console.WriteLine)
-                .EnableServiceProviderCaching()
-                .EnableSensitiveDataLogging()
-                .EnableDetailedErrors());
-        
         if (connectionString is not null)
             services.AddHealthChecks()
                 .AddNpgSql(connectionString);

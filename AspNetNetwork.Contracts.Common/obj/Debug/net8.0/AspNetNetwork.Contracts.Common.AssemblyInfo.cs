@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetNetwork.Contracts.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7f4677d98a5d11f8926113518442468d4ed9aa3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2621b9684860c172f32a94345a939127276022d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetNetwork.Contracts.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetNetwork.Contracts.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

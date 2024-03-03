@@ -1,8 +1,8 @@
-using AspNetNetwork.Domain.Identity.Enumerations;
+using AspNetNetwork.Domain.Identity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AspNetNetwork.Database.Message.Data;
+namespace AspNetNetwork.Database.Common.Configurations;
 
 /// <summary>
 /// Represents the configuration for the <see cref="Message"/> entity.
@@ -12,6 +12,8 @@ public sealed class MessageConfiguration: IEntityTypeConfiguration<Domain.Identi
     /// <inheritdoc />
     public void Configure(EntityTypeBuilder<Domain.Identity.Entities.Message> builder)
     {
+        builder.ToTable("messages");
+        
         builder.HasKey(x => x.Id);
 
         builder.Property(x => x.Description)

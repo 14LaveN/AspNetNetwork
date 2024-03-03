@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AspNetNetwork.Database.PersonalEvent.Data;
+namespace AspNetNetwork.Database.Common.Configurations;
 
 /// <summary>
 /// Represents the configuration for the <see cref="PersonalEvent"/> entity.

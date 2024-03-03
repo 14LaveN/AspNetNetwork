@@ -45,6 +45,6 @@ public interface IInvitationRepository
     /// <param name="user">The user to be invited.</param>
     /// <returns>The result that contains an invitation or an error.</returns>
     Task<Result<Domain.Identity.Entities.Invitation>> InviteAsync(
-        GroupEvent groupEvent,
+        Domain.Identity.Entities.GroupEvent groupEvent,
         User user);
 }

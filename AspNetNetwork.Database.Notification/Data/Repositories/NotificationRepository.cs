@@ -12,7 +12,7 @@ namespace AspNetNetwork.Database.Notification.Data.Repositories;
 /// </summary>
 internal sealed class NotificationRepository : GenericRepository<Domain.Identity.Entities.Notification>, INotificationRepository
 {
-    private readonly BaseDbContext<Event> _eventDbContext;
+    private readonly BaseDbContext _eventDbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="NotificationRepository"/> class.
@@ -20,8 +20,8 @@ internal sealed class NotificationRepository : GenericRepository<Domain.Identity
     /// <param name="dbContext">The database context.</param>
     /// <param name="eventDbContext">The some event database context.</param>
     public NotificationRepository(
-        BaseDbContext<Domain.Identity.Entities.Notification> dbContext,
-        BaseDbContext<Event> eventDbContext)
+        BaseDbContext dbContext,
+        BaseDbContext eventDbContext)
         : base(dbContext)
     {
         _eventDbContext = eventDbContext;

@@ -14,8 +14,8 @@ namespace AspNetNetwork.Events.Invitation.Queries.GetInvitationById;
 /// </summary>
 internal sealed class GetInvitationByIdQueryHandler : IQueryHandler<GetInvitationByIdQuery, Maybe<InvitationResponse>>
 {
-    private readonly BaseDbContext<Domain.Identity.Entities.Invitation> _invitationDbContext;
-    private readonly BaseDbContext<GroupEvent> _groupEventDbContext;
+    private readonly BaseDbContext _invitationDbContext;
+    private readonly BaseDbContext _groupEventDbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GetInvitationByIdQueryHandler"/> class.
@@ -23,8 +23,8 @@ internal sealed class GetInvitationByIdQueryHandler : IQueryHandler<GetInvitatio
     /// <param name="invitationDbContext">The invitations database context.</param>
     /// <param name="groupEventDbContext">The group events database context.</param>
     public GetInvitationByIdQueryHandler(
-        BaseDbContext<Domain.Identity.Entities.Invitation> invitationDbContext,
-        BaseDbContext<GroupEvent> groupEventDbContext)
+        BaseDbContext invitationDbContext,
+        BaseDbContext groupEventDbContext)
     {
         _invitationDbContext = invitationDbContext;
         _groupEventDbContext = groupEventDbContext;

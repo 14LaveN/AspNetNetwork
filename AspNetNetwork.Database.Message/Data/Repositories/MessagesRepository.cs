@@ -18,7 +18,7 @@ public sealed class MessagesRepository
     /// Initialize new instance of <see cref="MessagesRepository"/> class.
     /// </summary>
     /// <param name="dbContext"></param>
-    public MessagesRepository(BaseDbContext<Domain.Identity.Entities.Message> dbContext) : base(dbContext)
+    public MessagesRepository(BaseDbContext dbContext) : base(dbContext)
     {
     }
 

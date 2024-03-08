@@ -28,12 +28,6 @@ public static class DependencyInjection
             throw new ArgumentNullException(nameof(services));
         }
         
-        var connectionString = configuration.GetConnectionString("TTGenericDb");
-        
-        if (connectionString is not null)
-            services.AddHealthChecks()
-                .AddNpgSql(connectionString);
-        
         services.AddScoped<IGroupEventRepository, GroupEventRepository>();
         services.AddScoped<IUnitOfWork<Domain.Identity.Entities.GroupEvent>, UnitOfWork<Domain.Identity.Entities.GroupEvent>>();
 

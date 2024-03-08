@@ -14,13 +14,13 @@ namespace AspNetNetwork.Events.GroupEvent.Events.Queries.GetGroupEventById;
 /// </summary>
 internal sealed class GetGroupEventByIdQueryHandler : IQueryHandler<GetGroupEventByIdQuery, Maybe<DetailedGroupEventResponse>>
 {
-    private readonly IDbContext<Domain.Identity.Entities.GroupEvent> _dbContext;
+    private readonly IDbContext _dbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GetGroupEventByIdQueryHandler"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    public GetGroupEventByIdQueryHandler(IDbContext<Domain.Identity.Entities.GroupEvent> dbContext)
+    public GetGroupEventByIdQueryHandler(IDbContext dbContext)
     {
         _dbContext = dbContext;
     }

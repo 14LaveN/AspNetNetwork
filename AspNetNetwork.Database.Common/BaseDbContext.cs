@@ -11,47 +11,72 @@ using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
 using AspNetNetwork.Domain.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using AspNetNetwork.Domain.Identity.Enumerations;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace AspNetNetwork.Database.Common;
 
 /// <summary>
 /// Represents the application database context base class.
 /// </summary>
-/// <typeparam name="T">The entity type.</typeparam>
-public class BaseDbContext<T>
-    : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IDbContext<T>
-    where T : Entity
+public class BaseDbContext
+    : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IDbContext
 {
     private readonly IMediator _mediator = null!;
     
     /// <summary>
-    /// Initializes a new instance of the <see cref="BaseDbContext{T}"/> class.
+    /// Initializes a new instance of the <see cref="BaseDbContext"/> class.
     /// </summary>
     /// <param name="options">The database context options.</param>
     /// <param name="mediator"></param>
-    public BaseDbContext(DbContextOptions options,
+    public BaseDbContext(DbContextOptions<BaseDbContext> options,
         IMediator mediator)
         : base(options)
     {
         _mediator = mediator;
     }
 
+
+
     /// <param name="dbContextOptions"></param>
     /// <inheritdoc />
-    public BaseDbContext(DbContextOptions dbContextOptions)
+    public BaseDbContext(DbContextOptions<BaseDbContext> dbContextOptions)
         : base(dbContextOptions) { }
 
     /// <inheritdoc />
     public BaseDbContext() { }
-    
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.ForeignKeyPropertiesMappedToUnrelatedTables));
+        optionsBuilder.UseNpgsql("Server=localhost;Port=5433;Database=ANGenericDb;User Id=postgres;Password=1111;");
+    }
+
     /// <inheritdoc />
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
         modelBuilder.HasDefaultSchema("dbo");
-        
-        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<IdentityUserLogin<Guid>>()
+           .HasKey(l => new { l.LoginProvider, l.ProviderKey });
+
+        modelBuilder.Entity<IdentityUserRole<Guid>>()
+             .HasKey(l => new { l.UserId, l.RoleId });
+
+        modelBuilder.Entity<IdentityUserToken<Guid>>()
+            .HasKey(l => new { l.UserId, l.LoginProvider, l.Name });
+
+        modelBuilder.Entity<Category>()
+            .HasNoKey();
+
+        modelBuilder.Entity<GroupEvent>()
+            .HasOne(g => g.Author)
+            .WithMany(u => u.YourGroupEvents)
+            .HasForeignKey(g => g.UserId);
     }
 
     /// <inheritdoc />

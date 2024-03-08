@@ -9,7 +9,8 @@ public static class SwaggerConfiguration
 {
     public static IServiceCollection AddSwachbackleService(
         this IServiceCollection services,
-        Assembly assembly)
+        Assembly assembly,
+        string apiName)
     {
         if (services is null)
         {
@@ -21,14 +22,40 @@ public static class SwaggerConfiguration
             options.SwaggerDoc("v1", new OpenApiInfo
             {
                 Version = "Поколение 1",
-                Title = "Identity API",
-                Description = "Backend Web API на C# .NET for TeamTasks.Micro application",
+                Title = apiName,
+                Description = $"Backend Web API на C# .NET for TeamTasks.Micro.{apiName} application",
                 Contact = new OpenApiContact
                 {
                     Name = "GitHub",
                     Url = new Uri("https://github.com/14LaveN")
                 }
             });
+
+            if (apiName is not "IdentityAPI")
+            {
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "JWT Authorization header используется в расшифровке запроса.",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                });
+            
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[] { }
+                    }
+                });
+            }
 
             var xmlFilename = $"{assembly.GetName().Name}.xml";
             options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));

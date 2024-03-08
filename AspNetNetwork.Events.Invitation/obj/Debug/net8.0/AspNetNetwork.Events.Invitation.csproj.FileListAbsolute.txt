@@ -38,3 +38,5 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0\refint\AspNetNetwork.Events.Invitation.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0\AspNetNetwork.Events.Invitation.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0\ref\AspNetNetwork.Events.Invitation.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\bin\Debug\net8.0\AspNetNetwork.Events.Invitation.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Invitation\obj\Debug\net8.0\AspNetNetwork.Events.Invitation.genruntimeconfig.cache

@@ -20,3 +20,5 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Message\obj\Debug\net8.0\
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Message\obj\Debug\net8.0\refint\AspNetNetwork.Database.Message.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Message\obj\Debug\net8.0\AspNetNetwork.Database.Message.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Message\obj\Debug\net8.0\ref\AspNetNetwork.Database.Message.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Message\bin\Debug\net8.0\AspNetNetwork.Database.Message.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Message\obj\Debug\net8.0\AspNetNetwork.Database.Message.genruntimeconfig.cache

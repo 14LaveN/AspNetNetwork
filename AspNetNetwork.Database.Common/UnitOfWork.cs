@@ -12,13 +12,13 @@ public sealed class UnitOfWork<TEntity>
     : IUnitOfWork<TEntity>
     where TEntity : Entity
 {
-    private readonly BaseDbContext<TEntity> _baseDbContext;
+    private readonly BaseDbContext _baseDbContext;
 
     /// <summary>
     /// Initialize generic db context.
     /// </summary>
     /// <param name="baseDbContext">The base generic db context.</param>
-    public UnitOfWork(BaseDbContext<TEntity> baseDbContext) =>
+    public UnitOfWork(BaseDbContext baseDbContext) =>
         _baseDbContext = baseDbContext;
 
     /// <summary>

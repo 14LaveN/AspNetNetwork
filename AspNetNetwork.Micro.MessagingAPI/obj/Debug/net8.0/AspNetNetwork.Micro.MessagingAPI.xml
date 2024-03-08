@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetNetwork.Micro.MessagingAPI</name>
+    </assembly>
+    <members>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection.DiAuthorization.AddAuthorizationExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection.DiCaching.AddCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection.DiDatabase.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection.DiHelpers.AddHelpers(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection.DiLogging.AddLoggingExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection.DiMediator.AddMediatr(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection.DiValidator.AddValidators(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Contracts.Message.Create.CreateMessageRequest">
+            <summary>
+            Represents the create <see cref="N:AspNetNetwork.Micro.MessagingAPI.Contracts.Message"/> request record class.
+            </summary>
+            <param name="Description">The description.</param>
+            <param name="RecipientId">The recipient identifier.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Contracts.Message.Create.CreateMessageRequest.#ctor(System.String,System.Guid)">
+            <summary>
+            Represents the create <see cref="N:AspNetNetwork.Micro.MessagingAPI.Contracts.Message"/> request record class.
+            </summary>
+            <param name="Description">The description.</param>
+            <param name="RecipientId">The recipient identifier.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.MessagingAPI.Contracts.Message.Create.CreateMessageRequest.Description">
+            <summary>The description.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.MessagingAPI.Contracts.Message.Create.CreateMessageRequest.RecipientId">
+            <summary>The recipient identifier.</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Controllers.V1.MessagesController">
+            <summary>
+            Represents the messages controller class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Controllers.V1.MessagesController.#ctor(MediatR.ISender,AspNetNetwork.Database.Identity.Data.Interfaces.IUserRepository)">
+            <summary>
+            Represents the messages controller class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Controllers.V1.MessagesController.CreateMessage(AspNetNetwork.Micro.MessagingAPI.Contracts.Message.Create.CreateMessageRequest)">
+            <summary>
+            Create message.
+            </summary>
+            <param name="request">The <see cref="T:AspNetNetwork.Micro.MessagingAPI.Contracts.Message.Create.CreateMessageRequest"/> class.</param>
+            <returns>Base information about create message method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Controllers.V1.MessagesController.UpdateTask(System.String,System.Guid)">
+            <summary>
+            Update message.
+            </summary>
+            <param name="request">The description.</param>
+            <param name="messageId">The message identifier.</param>
+            <returns>Base information about update message method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="400">BadRequest.</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Events.Create.AddAttendeeAndInvitationOnMessageCreatedDomainEventHandler">
+            <summary>
+            Represents the <see cref="T:AspNetNetwork.RabbitMq.Messaging.Messages.Events.Create.MessageCreatedIntegrationEvent"/> handler class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Events.Create.AddAttendeeAndInvitationOnMessageCreatedDomainEventHandler.#ctor(AspNetNetwork.Database.Attendee.Data.Interfaces.IAttendeeRepository,AspNetNetwork.Database.Common.Abstractions.IUnitOfWork{AspNetNetwork.Domain.Identity.Entities.GroupEvent},AspNetNetwork.Database.Common.Abstractions.IUnitOfWork{AspNetNetwork.Domain.Identity.Entities.Invitation},AspNetNetwork.Database.Invitation.Data.Interfaces.IInvitationRepository,AspNetNetwork.Database.GroupEvent.Data.Interfaces.IGroupEventRepository,MediatR.ISender,Microsoft.Extensions.Logging.ILogger{AspNetNetwork.Micro.MessagingAPI.Events.Create.AddAttendeeAndInvitationOnMessageCreatedDomainEventHandler},AspNetNetwork.Database.Common.Abstractions.IUnitOfWork{AspNetNetwork.Domain.Identity.Entities.Attendee},MediatR.IPublisher)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AspNetNetwork.Micro.MessagingAPI.Events.Create.AddAttendeeAndInvitationOnMessageCreatedDomainEventHandler"/> class.
+            </summary>
+            <param name="attendeeRepository">The attendee repository.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <param name="invitationUnitOfWork">The invitation unit of work.</param>
+            <param name="invitationRepository">The invitation repository.</param>
+            <param name="groupEventRepository">The group event repository.</param>
+            <param name="sender">The sender.</param>
+            <param name="logger">The logger.</param>
+            <param name="attendeeUnitOfWork">The attendee unit of work.</param>
+            <param name="publisher">The publisher.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Events.Create.AddAttendeeAndInvitationOnMessageCreatedDomainEventHandler.Handle(AspNetNetwork.Domain.Message.Events.MessageCreatedDomainEvent,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Behaviors.MessageTransactionBehavior`2">
+            <summary>
+            Represents the <see cref="T:AspNetNetwork.Domain.Identity.Entities.Message"/> transaction behaviour class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Behaviors.MessageTransactionBehavior`2.#ctor(AspNetNetwork.Database.Common.Abstractions.IUnitOfWork{AspNetNetwork.Domain.Identity.Entities.Message})">
+            <summary>
+            Initializes a new instance of the <see cref="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Behaviors.MessageTransactionBehavior`2"/> class.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Behaviors.MessageTransactionBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommand">
+            <summary>
+            Represents the Create message command record class.
+            </summary>
+            <param name="Description">The description.</param>
+            <param name="RecipientId">The recipient identifier.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommand.#ctor(System.String,System.Guid)">
+            <summary>
+            Represents the Create message command record class.
+            </summary>
+            <param name="Description">The description.</param>
+            <param name="RecipientId">The recipient identifier.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommand.Description">
+            <summary>The description.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommand.RecipientId">
+            <summary>The recipient identifier.</summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommand.op_Implicit(AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommand)~AspNetNetwork.Domain.Identity.Entities.Message">
+            <summary>
+            Create the message entity class from <see cref="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommand"/> record.
+            </summary>
+            <param name="command">The create message command.</param>
+            <returns>The new message entity.</returns>
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommandHandler">
+            <summary>
+            Represents the create message command handler class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommandHandler.#ctor(AspNetNetwork.Database.Message.Data.Interfaces.IMessagesRepository,Microsoft.Extensions.Logging.ILogger{AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommandHandler},AspNetNetwork.Application.Core.Abstractions.Helpers.JWT.IUserIdentifierProvider,AspNetNetwork.Database.Identity.Data.Interfaces.IUserRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommandHandler"/> class.
+            </summary>
+            <param name="messagesRepository">The messages repository.</param>
+            <param name="logger">The logger.</param>
+            <param name="userIdentifierProvider">The user identifier provider.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommandHandler.Handle(AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommandValidator">
+            <summary>
+            Represents the create message command validator class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage.CreateMessageCommandValidator.#ctor">
+            <summary>
+            Validate the create message command.
+            </summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.DeleteMessage.DeleteMessageCommand">
+            <summary>
+            Represents the delete message command record class.
+            </summary>
+            <param name="MessageId">The message identifier.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.DeleteMessage.DeleteMessageCommand.#ctor(System.Guid)">
+            <summary>
+            Represents the delete message command record class.
+            </summary>
+            <param name="MessageId">The message identifier.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.DeleteMessage.DeleteMessageCommand.MessageId">
+            <summary>The message identifier.</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommand">
+            <summary>
+            Represents the update message command record class.
+            </summary>
+            <param name="Description">The description.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommand.#ctor(System.String,System.Guid)">
+            <summary>
+            Represents the update message command record class.
+            </summary>
+            <param name="Description">The description.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommand.Description">
+            <summary>The description.</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommandHandler">
+            <summary>
+            Represents the <see cref="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommand"/> handler class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommandHandler.#ctor(AspNetNetwork.Database.Message.Data.Interfaces.IMessagesRepository,Microsoft.Extensions.Logging.ILogger{AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommandHandler},AspNetNetwork.Application.Core.Abstractions.Helpers.JWT.IUserIdentifierProvider,AspNetNetwork.Database.Identity.Data.Interfaces.IUserRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommandHandler"/> class.
+            </summary>
+            <param name="messagesRepository">The messages repository.</param>
+            <param name="logger">The logger.</param>
+            <param name="userIdentifierProvider">The user identifier provider.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommandHandler.Handle(AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommandValidator">
+            <summary>
+            Represents the <see cref="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommand"/> validator class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommandValidator.#ctor">
+            <summary>
+            Validate the <see cref="T:AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.UpdateMessage.UpdateMessageCommand"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

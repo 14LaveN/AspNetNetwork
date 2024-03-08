@@ -22,12 +22,6 @@ public static class DependencyInjection
             throw new ArgumentNullException(nameof(services));
         }
         
-        var connectionString = configuration.GetConnectionString("TTGenericDb");
-        
-        if (connectionString is not null)
-            services.AddHealthChecks()
-                .AddNpgSql(connectionString);
-        
         services.AddScoped<IUserUnitOfWork, UserUnitOfWork>();
         services.AddScoped<IUserRepository, UserRepository>();
         

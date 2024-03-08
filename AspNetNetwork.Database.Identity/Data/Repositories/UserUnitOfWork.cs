@@ -8,7 +8,7 @@ namespace AspNetNetwork.Database.Identity.Data.Repositories;
 /// <summary>
 /// Represents the user unit of work.
 /// </summary>
-public class UserUnitOfWork(BaseDbContext<Event> userDbContext)
+public sealed class UserUnitOfWork(BaseDbContext userDbContext)
     : IUserUnitOfWork
 {
     /// <summary>

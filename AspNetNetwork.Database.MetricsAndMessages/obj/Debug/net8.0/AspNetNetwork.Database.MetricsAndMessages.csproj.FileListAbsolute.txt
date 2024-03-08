@@ -24,3 +24,7 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\De
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\Debug\net8.0\AspNetNetwork.Database.MetricsAndMessages.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\Debug\net8.0\ref\AspNetNetwork.Database.MetricsAndMessages.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\Debug\net8.0\AspNetNetwork.Database.MetricsAndMessages.sourcelink.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\bin\Debug\net8.0\AspNetNetwork.Database.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\bin\Debug\net8.0\AspNetNetwork.Database.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\bin\Debug\net8.0\AspNetNetwork.Database.MetricsAndMessages.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.MetricsAndMessages\obj\Debug\net8.0\AspNetNetwork.Database.MetricsAndMessages.genruntimeconfig.cache

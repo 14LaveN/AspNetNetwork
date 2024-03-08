@@ -1,7 +1,13 @@
 using AspNetNetwork.Application.Core.Settings;
+using AspNetNetwork.Database.Attendee;
+using AspNetNetwork.Database.Common;
+using AspNetNetwork.Database.GroupEvent;
 using AspNetNetwork.Database.Identity;
+using AspNetNetwork.Database.Invitation;
 using AspNetNetwork.Database.Message;
 using AspNetNetwork.Database.MetricsAndMessages;
+using AspNetNetwork.Database.Notification;
+using AspNetNetwork.Database.PersonalEvent;
 
 namespace AspNetNetwork.Micro.MessagingAPI.Common.DependencyInjection;
 
@@ -23,7 +29,13 @@ public static class DiDatabase
 
         services.AddMongoDatabase(configuration);
         services.AddUserDatabase(configuration);
+        services.AddBaseDatabase(configuration);
         services.AddMessagesDatabase(configuration);
+        services.AddAttendeesDatabase(configuration);
+        services.AddPersonalEventDatabase(configuration);
+        services.AddGroupEventDatabase(configuration);
+        services.AddInvitationsDatabase(configuration);
+        services.AddNotificationsDatabase(configuration);
         
         services.Configure<MongoSettings>(
             configuration.GetSection(MongoSettings.MongoSettingsKey));

@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AspNetNetwork.Domain.Common.ValueObjects;
+using AspNetNetwork.Domain.Identity.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace AspNetNetwork.Database.Common.Configurations;
@@ -16,5 +18,14 @@ internal sealed class PersonalEventConfiguration : IEntityTypeConfiguration<Doma
         builder.Property(personalEvent => personalEvent.Processed)
             .IsRequired()
             .HasDefaultValue(false);
+        builder.OwnsOne(user => user.Name, firstNameBuilder =>
+        {
+            firstNameBuilder.WithOwner();
+
+            firstNameBuilder.Property(firstName => firstName.Value)
+                .HasColumnName(nameof(PersonalEvent.Name))
+                .HasMaxLength(Name.MaxLength)
+                .IsRequired();
+        });
     }
 }

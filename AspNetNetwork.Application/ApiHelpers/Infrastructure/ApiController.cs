@@ -22,12 +22,15 @@ public class ApiController : ControllerBase
 {
     protected ApiController(
         ISender sender,
-        IUserRepository userRepository)
+        IUserRepository userRepository, string controllerName)
     {
         UserId = GetUserId().GetAwaiter().GetResult();
         Sender = sender;
         UserRepository = userRepository;
+        ControllerName = controllerName;
     }
+
+    protected string ControllerName { get; }
 
     protected ISender Sender { get; }
 
@@ -35,9 +38,10 @@ public class ApiController : ControllerBase
 
     protected IUserRepository UserRepository { get; }
 
-    protected string? Token =>
-        Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-    
+    protected string? Token => 
+        ControllerName is "UsersController" ? "exceptToken" :
+            Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+
     /// <summary>
     /// Get name
     /// </summary>

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AspNetNetwork.Web",
   "resources": {
-    "hash": "sha256-1oZXoWdoI36Ogd5JA3dLFpa4W/VDE5aLA+mONpAKYyM=",
+    "hash": "sha256-Yursy1CA2XfqzfpZZwf8TZ7XbICHHmrAJOc+lREcNrY=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.0agj2xtcgg.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-EpWTfh4m/hEcXRFYMCR9YeYHwdUJgcm1laBaxWfq2S4=",
       "netstandard.wasm": "sha256-2kH24/YfHmU3B4eYRyRmiwebYROM4+B9eDWKvMnUdP8=",
       "System.Private.CoreLib.wasm": "sha256-CsySKiP7HYY1pS8LTDE60EkqiX5oHb3WoEZHDNd1yK0=",
-      "AspNetNetwork.Web.wasm": "sha256-HrOSPn4dwBbW+QrjAfvXm1y4rYBE3PZoQQynxUAyxkA="
+      "AspNetNetwork.Web.wasm": "sha256-VVsoewz537dnyZNTYnK2YFJ887ho515Qu/S1C5TCs+4="
     },
     "pdb": {
-      "AspNetNetwork.Web.pdb": "sha256-7yS5gLF+qBxyKKNezItFe9mvMiM2gTIhJ0soAB2UOe4="
+      "AspNetNetwork.Web.pdb": "sha256-hNi1AXigKW4rEczStF0mPhxaie+n9AK+69kA9sRgPbQ="
     }
   },
   "cacheBootResources": true,

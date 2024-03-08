@@ -14,7 +14,7 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
     public void Configure(EntityTypeBuilder<User> builder)
     {
         builder.ToTable("users");
-        
+
         builder.HasMany(x => x.Attendees)
             .WithOne(x => x.User)
             .HasForeignKey(x=>x.UserId)
@@ -23,19 +23,23 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
         builder.HasIndex(x => x.Id)
             .HasDatabaseName("IdUserIndex");
 
-        builder.HasData(User.Create(FirstName.Create("dfsdf").Value,
-            LastName.Create("fdfsdfsf").Value,
-            new EmailAddress("dfsdfsdfdsf"),
-            "Sdfdsf_2008",
-            Guid.Empty));
-        
+        //TODO builder.HasData( new EmailAddress("dfsdfsdfdsf"),
+        //TODO     new User(FirstName.Create("dfsdf").Value,
+        //TODO     LastName.Create("fdfsdfsf").Value,
+        //TODO     new EmailAddress("dfsdfsdfdsf"),
+        //TODO     "Sdfdsf_2008",
+        //TODO     Guid.Empty));
+        //TODO 
         builder.HasKey(user => user.Id);
+
+        builder.Property(x => x.Id)
+            .ValueGeneratedOnAdd();
 
         //TODO builder.HasOne(x => x.Company)
         //TODO     .WithMany(x => x.Users)
         //TODO     .HasForeignKey(x => x.CompanyId)
         //TODO     .OnDelete(DeleteBehavior.Restrict);
-        
+
         builder.HasMany(x => x.YourGroupEvents)
             .WithOne(x => x.Author)
             .HasForeignKey(x=>x.UserId)
@@ -50,6 +54,7 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
                 .HasMaxLength(FirstName.MaxLength)
                 .IsRequired();
         });
+
 
         builder.OwnsOne(user => user.LastName, lastNameBuilder =>
         {
@@ -71,15 +76,10 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
                 .IsRequired();
         });
 
-        builder.Property<string>("_passwordHash")
-            .HasField("_passwordHash")
-            .HasColumnName("PasswordHash")
-            .IsRequired();
-
-        builder.Property(x => x.CompanyId)
-            .HasField("CompanyId")
-            .HasColumnName("CompanyId")
-            .HasDefaultValue(Guid.Empty);
+        //TODO builder.Property(x => x.CompanyId)
+        //TODO    .HasField("CompanyId")
+        //TODO    .HasColumnName("CompanyId")
+        //TODO    .HasDefaultValue(Guid.Empty);
 
         builder.Property(user => user.CreatedOnUtc).IsRequired();
 

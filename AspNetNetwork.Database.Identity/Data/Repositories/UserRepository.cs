@@ -8,7 +8,7 @@ using IUserRepository = AspNetNetwork.Database.Identity.Data.Interfaces.IUserRep
 
 namespace AspNetNetwork.Database.Identity.Data.Repositories;
 
-public class UserRepository(BaseDbContext<Event> userDbContext)
+public class UserRepository(BaseDbContext userDbContext)
     : IUserRepository
 {
     public async Task<Maybe<User>> GetByIdAsync(Guid userId) =>

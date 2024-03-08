@@ -8,9 +8,7 @@ namespace AspNetNetwork.Database.Common.Abstractions;
 /// <summary>
 /// Represents the application database context interface.
 /// </summary>
-/// <typeparam name="T">The entity type.</typeparam>
-public interface IDbContext<T> 
-    where T : Entity
+public interface IDbContext
 {
     /// <summary>
     /// Gets the database set for the specified entity type.

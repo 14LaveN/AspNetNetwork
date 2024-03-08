@@ -17,6 +17,11 @@ spec:
           image: aspnetnetwork-micro-identityapi:latest
           ports:
             - containerPort: 7187
+              
+        - name: aspnetnetwork-micro-messagingapi
+          image: aspnetnetwork-micro-messagingapi:latest
+          ports:
+            - containerPort: 7299
 
 ---
 

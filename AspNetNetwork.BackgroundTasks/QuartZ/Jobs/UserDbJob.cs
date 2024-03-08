@@ -11,7 +11,7 @@ namespace AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
 /// </summary>
 public sealed class UserDbJob : IJob
 {
-    private readonly BaseDbContext<Event> _appDbContext = new();
+    private readonly BaseDbContext _appDbContext = new();
 
     /// <inheritdoc />
     public async Task Execute(IJobExecutionContext context)

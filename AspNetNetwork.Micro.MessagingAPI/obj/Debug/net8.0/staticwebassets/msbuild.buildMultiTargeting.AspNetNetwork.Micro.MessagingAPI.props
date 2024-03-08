@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AspNetNetwork.Micro.MessagingAPI.props" />
+</Project>

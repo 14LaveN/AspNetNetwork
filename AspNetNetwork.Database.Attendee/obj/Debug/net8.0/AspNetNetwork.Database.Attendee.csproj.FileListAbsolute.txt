@@ -20,3 +20,5 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Attendee\obj\Debug\net8.0
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Attendee\obj\Debug\net8.0\AspNetNetwork.Database.Attendee.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Attendee\obj\Debug\net8.0\ref\AspNetNetwork.Database.Attendee.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Attendee\obj\Debug\net8.0\AspNetNetwork.Database.Attendee.sourcelink.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Attendee\bin\Debug\net8.0\AspNetNetwork.Database.Attendee.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Attendee\obj\Debug\net8.0\AspNetNetwork.Database.Attendee.genruntimeconfig.cache

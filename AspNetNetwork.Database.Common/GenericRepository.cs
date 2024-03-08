@@ -16,13 +16,13 @@ public abstract class GenericRepository<TEntity>
     /// Initializes a new instance of the <see cref="GenericRepository{TEntity}"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    protected GenericRepository(BaseDbContext<TEntity> dbContext) =>
+    protected GenericRepository(BaseDbContext dbContext) =>
         DbContext = dbContext;
 
     /// <summary>
     /// Gets the database context.
     /// </summary>
-    protected BaseDbContext<TEntity> DbContext { get; }
+    protected BaseDbContext DbContext { get; }
 
     /// <summary>
     /// Gets the entity with the specified identifier.

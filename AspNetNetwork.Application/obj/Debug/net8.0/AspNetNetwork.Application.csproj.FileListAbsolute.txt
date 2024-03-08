@@ -22,3 +22,7 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\refin
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\AspNetNetwork.Application.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\ref\AspNetNetwork.Application.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\AspNetNetwork.Application.sourcelink.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\bin\Debug\net8.0\AspNetNetwork.Database.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\bin\Debug\net8.0\AspNetNetwork.Database.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\bin\Debug\net8.0\AspNetNetwork.Application.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Application\obj\Debug\net8.0\AspNetNetwork.Application.genruntimeconfig.cache

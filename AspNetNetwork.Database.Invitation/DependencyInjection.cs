@@ -24,12 +24,6 @@ public static class DependencyInjection
             throw new ArgumentNullException(nameof(services));
         }
         
-        var connectionString = configuration.GetConnectionString("PAGenericDb");
-        
-        if (connectionString is not null)
-            services.AddHealthChecks()
-                .AddNpgSql(connectionString);
-        
         services.AddScoped<IInvitationRepository, InvitationRepository>();
         services.AddScoped<IUnitOfWork<Domain.Identity.Entities.Invitation>, UnitOfWork<Domain.Identity.Entities.Invitation>>();
 

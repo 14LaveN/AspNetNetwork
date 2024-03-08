@@ -9,3 +9,4 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\refint\AspNetNetwork.Contracts.Common.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\AspNetNetwork.Contracts.Common.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\ref\AspNetNetwork.Contracts.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Contracts.Common\obj\Debug\net8.0\AspNetNetwork.Contracts.Common.sourcelink.json

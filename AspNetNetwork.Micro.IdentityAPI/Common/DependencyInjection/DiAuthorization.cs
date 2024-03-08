@@ -35,7 +35,7 @@ public static class DiAuthorization
             {
                 options.User.RequireUniqueEmail = false;
             })
-            .AddEntityFrameworkStores<BaseDbContext<Event>>()
+            .AddEntityFrameworkStores<BaseDbContext>()
             .AddDefaultTokenProviders();
         
         services.AddAuthentication(opt => {

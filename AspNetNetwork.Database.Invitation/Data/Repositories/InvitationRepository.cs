@@ -19,7 +19,7 @@ internal sealed class InvitationRepository : GenericRepository<Domain.Identity.E
     /// Initializes a new instance of the <see cref="InvitationRepository"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    public InvitationRepository(BaseDbContext<Domain.Identity.Entities.Invitation> dbContext)
+    public InvitationRepository(BaseDbContext dbContext)
         : base(dbContext) { }
 
     /// <inheritdoc />

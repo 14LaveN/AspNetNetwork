@@ -30,7 +30,7 @@ internal  sealed class IntegrationEventConsumerBackgroundService : IHostedServic
 
         var factory = new ConnectionFactory
         {
-            Uri = new Uri(MessageBrokerSettings.AmqpLink!)
+            Uri = new Uri("amqps://dgpswpjt:tbQvnOh93n-sdqDMjXAjfB53OiShmOka@chimpanzee.rmq.cloudamqp.com/dgpswpjt")
         };
 
         _connection = factory.CreateConnectionAsync().GetAwaiter().GetResult();

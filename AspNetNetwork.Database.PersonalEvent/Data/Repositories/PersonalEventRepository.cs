@@ -15,7 +15,7 @@ internal sealed class PersonalEventRepository : GenericRepository<Domain.Identit
     /// Initializes a new instance of the <see cref="PersonalEventRepository"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    public PersonalEventRepository(BaseDbContext<Domain.Identity.Entities.PersonalEvent> dbContext)
+    public PersonalEventRepository(BaseDbContext dbContext)
         : base(dbContext)
     {
     }

@@ -24,8 +24,6 @@ public static class DependencyInjection
             throw new ArgumentNullException(nameof(services));
         }
         
-        var connectionString = configuration.GetConnectionString("TTGenericDb");
-        
         services.AddScoped<IPersonalEventRepository, PersonalEventRepository>();
         services.AddScoped<IUnitOfWork<Domain.Identity.Entities.PersonalEvent>, UnitOfWork<Domain.Identity.Entities.PersonalEvent>>();
 

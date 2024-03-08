@@ -1,3 +1,4 @@
+using AspNetNetwork.Application.Core.Abstractions.Notifications;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -18,6 +19,7 @@ public static class DependencyInjection
         // services.ConfigureOptions<MailSettings>(configuration.GetSection(MailSettings.SettingsKey));
         
         services.AddScoped<IEmailService, EmailService>();
+        services.AddScoped<IEmailNotificationService, EmailNotificationService>();
         
         return services;
     }

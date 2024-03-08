@@ -107,11 +107,13 @@ public static class ApiRoutes
     {
         public const string Login = "login";
         
+        public const string Register = "register";
+        
         public const string GetById = "users/{userId:guid}";
 
         public const string Update = "users/{userId:guid}";
 
-        public const string ChangePassword = "users/{userId:guid}/change-passwrod";
+        public const string ChangePassword = "change-passwrod";
 
         public const string SendFriendshipRequest = "users/{userId:guid}/send-friendship-request";
     }

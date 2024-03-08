@@ -18,7 +18,7 @@ internal sealed class GroupEventRepository : GenericRepository<Domain.Identity.E
     /// Initializes a new instance of the <see cref="GroupEventRepository"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
-    public GroupEventRepository(BaseDbContext<Domain.Identity.Entities.GroupEvent> dbContext)
+    public GroupEventRepository(BaseDbContext dbContext)
         : base(dbContext) { }
 
     /// <inheritdoc/>

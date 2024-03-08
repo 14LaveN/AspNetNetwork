@@ -25,14 +25,8 @@ public static class DependencyInjection
         {
             throw new ArgumentNullException(nameof(services));
         }
-        
-        var connectionString = configuration.GetConnectionString("TTGenericDb");
 
-        if (connectionString is not null)
-            services.AddHealthChecks()
-                .AddNpgSql(connectionString);
-
-        services.AddTransient<BaseDbContext<Event>>();
+        services.AddTransient<BaseDbContext>();
         
         services.AddScoped<INotificationRepository, NotificationRepository>();
         services.AddScoped<IUnitOfWork<Domain.Identity.Entities.Notification>, UnitOfWork<Domain.Identity.Entities.Notification>>();

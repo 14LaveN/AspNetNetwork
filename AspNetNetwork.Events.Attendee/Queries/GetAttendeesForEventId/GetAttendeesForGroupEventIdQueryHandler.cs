@@ -14,8 +14,8 @@ namespace AspNetNetwork.Events.Attendee.Queries.GetAttendeesForEventId;
 internal sealed class GetAttendeesForGroupEventIdQueryHandler
     : IQueryHandler<GetAttendeesForGroupEventIdQuery, Maybe<AttendeeListResponse>>
 {
-    private readonly BaseDbContext<Domain.Identity.Entities.Attendee> _dbContext;
-    private readonly BaseDbContext<GroupEvent> _groupEventDbContext;
+    private readonly BaseDbContext _dbContext;
+    private readonly BaseDbContext _groupEventDbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GetAttendeesForGroupEventIdQueryHandler"/> class.
@@ -23,8 +23,8 @@ internal sealed class GetAttendeesForGroupEventIdQueryHandler
     /// <param name="dbContext">The database context.</param>
     /// <param name="groupEventDbContext">The group event database context.</param>
     public GetAttendeesForGroupEventIdQueryHandler(
-        BaseDbContext<Domain.Identity.Entities.Attendee> dbContext,
-        BaseDbContext<GroupEvent> groupEventDbContext)
+        BaseDbContext dbContext,
+        BaseDbContext groupEventDbContext)
     {
         _dbContext = dbContext;
         _groupEventDbContext = groupEventDbContext;

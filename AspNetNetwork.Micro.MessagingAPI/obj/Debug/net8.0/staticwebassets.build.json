@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "oBkX2a/qXVGqOk8G0PsM0XZmTmpHJSX/4z+Dpy0ui7c=",
+  "Source": "AspNetNetwork.Micro.MessagingAPI",
+  "BasePath": "_content/AspNetNetwork.Micro.MessagingAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

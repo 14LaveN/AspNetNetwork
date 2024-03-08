@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetNetwork.Micro.IdentityAPI</name>
+    </assembly>
+    <members>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Common.DependencyInjection.DiAuthorization.AddAuthorizationExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Common.DependencyInjection.DiCaching.AddCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Common.DependencyInjection.DiDatabase.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Common.DependencyInjection.DiHelpers.AddHelpers(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Common.DependencyInjection.DiLogging.AddLoggingExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Common.DependencyInjection.DiMediator.AddMediatr(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Common.DependencyInjection.DiValidator.AddValidators(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Login.LoginRequest">
+            <summary>
+            Represents the login request record class.
+            </summary>
+            <param name="UserName">The user name.</param>
+            <param name="Password">The password</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Login.LoginRequest.#ctor(System.String,System.String)">
+            <summary>
+            Represents the login request record class.
+            </summary>
+            <param name="UserName">The user name.</param>
+            <param name="Password">The password</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Login.LoginRequest.UserName">
+            <summary>The user name.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Login.LoginRequest.Password">
+            <summary>The password</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest">
+            <summary>
+            Represents the register request record class.
+            </summary>
+            <param name="FirstName">The first name.</param>
+            <param name="LastName">The last name.</param>
+            <param name="Email">The email.</param>
+            <param name="Password">The password.</param>
+            <param name="UserName">The user name.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Represents the register request record class.
+            </summary>
+            <param name="FirstName">The first name.</param>
+            <param name="LastName">The last name.</param>
+            <param name="Email">The email.</param>
+            <param name="Password">The password.</param>
+            <param name="UserName">The user name.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest.FirstName">
+            <summary>The first name.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest.LastName">
+            <summary>The last name.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest.Email">
+            <summary>The email.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest.Password">
+            <summary>The password.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest.UserName">
+            <summary>The user name.</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Controllers.V1.UsersController">
+            <summary>
+            Represents the users controller class.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Controllers.V1.UsersController.#ctor(MediatR.ISender,AspNetNetwork.Database.Identity.Data.Interfaces.IUserRepository)">
+            <summary>
+            Represents the users controller class.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Controllers.V1.UsersController.Login(AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Login.LoginRequest)">
+            <summary>
+            Login user.
+            </summary>
+            <param name="request">The <see cref="T:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Login.LoginRequest"/> class.</param>
+            <returns>Base information about login user method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Controllers.V1.UsersController.Register(AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest)">
+            <summary>
+            Register user.
+            </summary>
+            <param name="request">The <see cref="T:AspNetNetwork.Micro.IdentityAPI.Contracts.Users.Register.RegisterRequest"/> class.</param>
+            <returns>Base information about register user method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Controllers.V1.UsersController.ChangePassword(System.String)">
+            <summary>
+            Change password from user.
+            </summary>
+            <param name="password">The password.</param>
+            <returns>Base information about change password from user method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Extensions.AesEncryptor">
+            <summary>
+            Represents the aes encryptor class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Extensions.AesEncryptor.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypt some information.
+            </summary>
+            <param name="key">The string key.</param>
+            <param name="content">The content.</param>
+            <returns>Returns encrypt string.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Extensions.AesEncryptor.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypt some information.
+            </summary>
+            <param name="key">The string key.</param>
+            <param name="encryptedContent">The encrypted content.</param>
+            <returns>Returns decrypted string.</returns>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Extensions.JwtExtensions">
+            <summary>
+            Represents the json web token extensions class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Extensions.JwtExtensions.GenerateRefreshToken(AspNetNetwork.Domain.Identity.Entities.User,AspNetNetwork.Application.Core.Settings.User.JwtOptions)">
+            <summary>
+            Generate new refresh token by options.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="jwtOptions">The json web token options.</param>
+            <returns>Returns refresh token.</returns>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Extensions.JwtExtensions.GenerateAccessToken(AspNetNetwork.Domain.Identity.Entities.User,AspNetNetwork.Application.Core.Settings.User.JwtOptions)">
+            <summary>
+            Generate new access token by options.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="jwtOptions">The json web token options.</param>
+            <returns>Returns access token.</returns>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Extensions.StringRandomizer">
+            <summary>
+            Represents the string randomizer class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Extensions.StringRandomizer.Randomize(System.Int32)">
+            <summary>
+            Randomize the string.
+            </summary>
+            <param name="length">The length.</param>
+            <returns>Returns randomizing string.</returns>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Behaviors.UserTransactionBehavior`2">
+            <summary>
+            Represents the <see cref="T:AspNetNetwork.Domain.Identity.Entities.User"/> transaction behaviour class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Behaviors.UserTransactionBehavior`2.#ctor(AspNetNetwork.Database.Common.Abstractions.IUnitOfWork{AspNetNetwork.Domain.Identity.Entities.User})">
+            <summary>
+            Initializes a new instance of the <see cref="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Behaviors.UserTransactionBehavior`2"/> class.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Behaviors.UserTransactionBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommand">
+            <summary>
+            Represents the change password command record class.
+            </summary>
+            <param name="UserId">The user identifier./</param>
+            <param name="Password">The password.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommand.#ctor(System.Guid,System.String)">
+            <summary>
+            Represents the change password command record class.
+            </summary>
+            <param name="UserId">The user identifier./</param>
+            <param name="Password">The password.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommand.UserId">
+            <summary>The user identifier./</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommand.Password">
+            <summary>The password.</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommandHandler">
+            <summary>
+            Represents the <see cref="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommand"/> handler.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommandHandler.#ctor(AspNetNetwork.Database.Identity.Data.Interfaces.IUserUnitOfWork,Microsoft.AspNetCore.Identity.UserManager{AspNetNetwork.Domain.Identity.Entities.User})">
+            <summary>
+            Initializes a new instance of the <see cref="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommandHandler"/> class.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+            <param name="userManager"></param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommandHandler.Handle(AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommandValidator">
+            <summary>
+            Represents the <see cref="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommand"/> validator.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommandValidator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.ChangePassword.ChangePasswordCommandValidator"/> class.
+            </summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommand">
+            <summary>
+            Represents the login command record class.
+            </summary>
+            <param name="UserName">The user name.</param>
+            <param name="Password">The password.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommand.#ctor(System.String,AspNetNetwork.Domain.Common.ValueObjects.Password)">
+            <summary>
+            Represents the login command record class.
+            </summary>
+            <param name="UserName">The user name.</param>
+            <param name="Password">The password.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommand.UserName">
+            <summary>The user name.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommand.Password">
+            <summary>The password.</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommandHandler">
+            <summary>
+            Represents the login command handler class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="unitOfWork">The user unit of work.</param>
+            <param name="userManager">The user manager.</param>
+            <param name="jwtOptions">The json web token options.</param>
+            <param name="signInManager">The sign in manager.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommandHandler.#ctor(Microsoft.Extensions.Logging.ILogger{AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommandHandler},AspNetNetwork.Database.Identity.Data.Interfaces.IUserUnitOfWork,Microsoft.AspNetCore.Identity.UserManager{AspNetNetwork.Domain.Identity.Entities.User},Microsoft.Extensions.Options.IOptions{AspNetNetwork.Application.Core.Settings.User.JwtOptions},Microsoft.AspNetCore.Identity.SignInManager{AspNetNetwork.Domain.Identity.Entities.User})">
+            <summary>
+            Represents the login command handler class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="unitOfWork">The user unit of work.</param>
+            <param name="userManager">The user manager.</param>
+            <param name="jwtOptions">The json web token options.</param>
+            <param name="signInManager">The sign in manager.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommandHandler.Handle(AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommandValidator">
+            <summary>
+            Represents the login command validator class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Login.LoginCommandValidator.#ctor">
+            <summary>
+            Validate the login command.
+            </summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommand">
+            <summary>
+            Represents the register command record class.
+            </summary>
+            <param name="FirstName">The first name.</param>
+            <param name="LastName">The last name.</param>
+            <param name="Email">The email.</param>
+            <param name="Password">The password.</param>
+            <param name="UserName">The user name.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommand.#ctor(AspNetNetwork.Domain.Common.ValueObjects.FirstName,AspNetNetwork.Domain.Common.ValueObjects.LastName,AspNetNetwork.Domain.Common.ValueObjects.EmailAddress,AspNetNetwork.Domain.Common.ValueObjects.Password,System.String)">
+            <summary>
+            Represents the register command record class.
+            </summary>
+            <param name="FirstName">The first name.</param>
+            <param name="LastName">The last name.</param>
+            <param name="Email">The email.</param>
+            <param name="Password">The password.</param>
+            <param name="UserName">The user name.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommand.FirstName">
+            <summary>The first name.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommand.LastName">
+            <summary>The last name.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommand.Email">
+            <summary>The email.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommand.Password">
+            <summary>The password.</summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommand.UserName">
+            <summary>The user name.</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommandHandler">
+            <summary>
+            Represents the register command handler class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="userManager">The user manager.</param>
+            <param name="sender">The sender.</param>
+            <param name="signInManager">The sign in manager.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommandHandler.#ctor(Microsoft.Extensions.Logging.ILogger{AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommandHandler},Microsoft.AspNetCore.Identity.UserManager{AspNetNetwork.Domain.Identity.Entities.User},MediatR.ISender,Microsoft.AspNetCore.Identity.SignInManager{AspNetNetwork.Domain.Identity.Entities.User})">
+            <summary>
+            Represents the register command handler class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="userManager">The user manager.</param>
+            <param name="sender">The sender.</param>
+            <param name="signInManager">The sign in manager.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommandHandler.Handle(AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommandValidator">
+            <summary>
+            Represents the register command validator class.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Commands.Register.RegisterCommandValidator.#ctor">
+            <summary>
+            Validate the login command.
+            </summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.Mediatr.Queries.GetTheUserById.GetTheUserByIdCommand">
+            <summary>
+            Represents the get user by id command record.
+            </summary>
+            <param name="UserId">The user identifier.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.Mediatr.Queries.GetTheUserById.GetTheUserByIdCommand.#ctor(System.Guid)">
+            <summary>
+            Represents the get user by id command record.
+            </summary>
+            <param name="UserId">The user identifier.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.Mediatr.Queries.GetTheUserById.GetTheUserByIdCommand.UserId">
+            <summary>The user identifier.</summary>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.RequireScopeHandler">
+            <summary>
+            Represents the require scope authorization handler.
+            </summary>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.RequireScopeHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,AspNetNetwork.Micro.IdentityAPI.ScopeRequirement)">
+            <summary>
+            Handle requirement by authorization handler context.
+            </summary>
+            <param name="context">The Authorization Handler Context.</param>
+            <param name="requirement">The scope requirement.</param>
+            <returns></returns>
+        </member>
+        <member name="T:AspNetNetwork.Micro.IdentityAPI.ScopeRequirement">
+            <summary>
+            Represents the scope requirement record class.
+            </summary>
+            <param name="Issuer">The issuer.</param>
+            <param name="Scope">The scope.</param>
+        </member>
+        <member name="M:AspNetNetwork.Micro.IdentityAPI.ScopeRequirement.#ctor(System.String,System.String)">
+            <summary>
+            Represents the scope requirement record class.
+            </summary>
+            <param name="Issuer">The issuer.</param>
+            <param name="Scope">The scope.</param>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.ScopeRequirement.Issuer">
+            <summary>
+            Gets issuer.
+            </summary>
+        </member>
+        <member name="P:AspNetNetwork.Micro.IdentityAPI.ScopeRequirement.Scope">
+            <summary>
+            Gets scope.
+            </summary>
+        </member>
+    </members>
+</doc>

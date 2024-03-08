@@ -13,7 +13,7 @@ namespace AspNetNetwork.Database.Attendee.Data.Repositories;
 /// </summary>
 internal sealed class AttendeeRepository : GenericRepository<Domain.Identity.Entities.Attendee>, IAttendeeRepository
 {
-    private readonly BaseDbContext<GroupEvent> _groupEventDbContext;
+    private readonly BaseDbContext _groupEventDbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="AttendeeRepository"/> class.
@@ -21,8 +21,8 @@ internal sealed class AttendeeRepository : GenericRepository<Domain.Identity.Ent
     /// <param name="dbContext">The database context.</param>
     /// <param name="groupEventDbContext">The group event database context.</param>
     public AttendeeRepository(
-        BaseDbContext<Domain.Identity.Entities.Attendee> dbContext,
-        BaseDbContext<GroupEvent> groupEventDbContext)
+        BaseDbContext dbContext,
+        BaseDbContext groupEventDbContext)
         : base(dbContext)
     {
         _groupEventDbContext = groupEventDbContext;

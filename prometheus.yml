@@ -4,12 +4,19 @@ global:
   evaluation_interval: 15s
 
 scrape_configs:
-  - job_name: 'asp-net-network'
+  - job_name: 'asp-net-network-identity'
     metrics_path: '/metrics'
     scheme: 'http'
     honor_timestamps: true
     static_configs:
       - targets: ['host.docker.internal:7187']
+        
+  - job_name: 'asp-net-network-messaging'
+    metrics_path: '/metrics'
+    scheme: 'http'
+    honor_timestamps: true
+    static_configs:
+      - targets: [ 'host.docker.internal:7299' ]
 
   - job_name: 'prometheus'
     static_configs:

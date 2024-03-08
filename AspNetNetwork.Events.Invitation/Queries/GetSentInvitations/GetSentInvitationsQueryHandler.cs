@@ -16,8 +16,8 @@ namespace AspNetNetwork.Events.Invitation.Queries.GetSentInvitations;
 internal sealed class GetSentInvitationsQueryHandler
     : IQueryHandler<GetSentInvitationsQuery, Maybe<SentInvitationsListResponse>>
 {
-    private readonly BaseDbContext<Domain.Identity.Entities.Invitation> _invitationDbContext;
-    private readonly BaseDbContext<GroupEvent> _groupEventDbContext;
+    private readonly BaseDbContext _invitationDbContext;
+    private readonly BaseDbContext _groupEventDbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GetSentInvitationsQueryHandler"/> class.
@@ -26,8 +26,8 @@ internal sealed class GetSentInvitationsQueryHandler
     /// <param name="userDbContext">The users database context.</param>
     /// <param name="groupEventDbContext">The group events database context.</param>
     public GetSentInvitationsQueryHandler(
-        BaseDbContext<Domain.Identity.Entities.Invitation> invitationDbContext,
-        BaseDbContext<GroupEvent> groupEventDbContext)
+        BaseDbContext invitationDbContext,
+        BaseDbContext groupEventDbContext)
     {
         _invitationDbContext = invitationDbContext;
         _groupEventDbContext = groupEventDbContext;

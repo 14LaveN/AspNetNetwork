@@ -36,3 +36,5 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\A
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Database.Invitation.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Domain.Message.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\obj\Debug\net8.0\AspNetNetwork.Events.Attendee.sourcelink.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\bin\Debug\net8.0\AspNetNetwork.Events.Attendee.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Events.Attendee\obj\Debug\net8.0\AspNetNetwork.Events.Attendee.genruntimeconfig.cache

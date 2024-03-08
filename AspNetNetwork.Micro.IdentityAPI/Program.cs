@@ -35,7 +35,7 @@ builder.Services.AddDatabase(builder.Configuration);
 
 builder.Services.AddHelpers();
 
-builder.Services.AddSwachbackleService(Assembly.GetExecutingAssembly());
+builder.Services.AddSwachbackleService(Assembly.GetExecutingAssembly(), "IdentityAPI");
 
 builder.Services.AddApplication();
 

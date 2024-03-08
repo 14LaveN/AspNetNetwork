@@ -14,14 +14,14 @@ namespace AspNetNetwork.Events.GroupEvent.Events.Queries.Get10MostRecentAttendin
 internal sealed class Get10MostRecentAttendingGroupEventsQueryHandler
     : IQueryHandler<Get10MostRecentAttendingGroupEventsQuery, Maybe<IReadOnlyCollection<GroupEventResponse>>>
 {
-    private readonly IDbContext<Domain.Identity.Entities.GroupEvent> _dbContext;
+    private readonly IDbContext _dbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Get10MostRecentAttendingGroupEventsQueryHandler"/> class.
     /// </summary>
     /// <param name="userIdentifierProvider">The user identifier provider.</param>
     /// <param name="dbContext">The database context.</param>
-    public Get10MostRecentAttendingGroupEventsQueryHandler(IDbContext<Domain.Identity.Entities.GroupEvent> dbContext)
+    public Get10MostRecentAttendingGroupEventsQueryHandler(IDbContext dbContext)
     {
         _dbContext = dbContext;
     }

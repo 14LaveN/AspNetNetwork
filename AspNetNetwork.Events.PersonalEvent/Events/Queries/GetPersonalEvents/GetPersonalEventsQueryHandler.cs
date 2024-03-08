@@ -15,14 +15,14 @@ namespace AspNetNetwork.Events.PersonalEvent.Events.Queries.GetPersonalEvents;
 /// </summary>
 internal sealed class GetPersonalEventsQueryHandler : IQueryHandler<GetPersonalEventsQuery, Maybe<PagedList<PersonalEventResponse>>>
 {
-    private readonly IDbContext<Domain.Identity.Entities.PersonalEvent> _dbContext;
+    private readonly IDbContext _dbContext;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GetPersonalEventsQueryHandler"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
     public GetPersonalEventsQueryHandler(
-        IDbContext<Domain.Identity.Entities.PersonalEvent> dbContext)
+        IDbContext dbContext)
     {
         _dbContext = dbContext;
     }

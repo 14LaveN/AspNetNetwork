@@ -18,6 +18,17 @@ using Prometheus.Client.HttpRequestDurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddMvc();
+
+builder.Host.UseMetricsWebTracking(options => 
+        options.OAuth2TrackingEnabled = true)
+    .UseMetricsEndpoints(options =>
+    {
+        options.EnvironmentInfoEndpointEnabled = true;
+        options.MetricsTextEndpointOutputFormatter = new MetricsPrometheusTextOutputFormatter();
+        options.MetricsEndpointOutputFormatter = new MetricsPrometheusProtobufOutputFormatter();
+    });
+
 builder.Services.AddControllers();
 
 builder.Services.AddValidators();
@@ -36,9 +47,13 @@ builder.Services.AddDatabase(builder.Configuration);
 
 builder.Services.AddHelpers();
 
-builder.Services.AddSwachbackleService(Assembly.GetExecutingAssembly());
+builder.Services.AddSwachbackleService(Assembly.GetExecutingAssembly(), "MessagingAPI");
+
+builder.Services.AddCaching();
 
 builder.Services.AddApplication();
+
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 builder.Services.AddAuthorizationExtension(builder.Configuration);
 
@@ -98,15 +113,6 @@ void UseMetrics()
 {
     if (app is null)
         throw new ArgumentException();
-
-    builder.Host.UseMetricsWebTracking(options => 
-        options.OAuth2TrackingEnabled = true)
-        .UseMetricsEndpoints(options =>
-        {
-            options.EnvironmentInfoEndpointEnabled = true;
-            options.MetricsTextEndpointOutputFormatter = new MetricsPrometheusTextOutputFormatter();
-            options.MetricsEndpointOutputFormatter = new MetricsPrometheusProtobufOutputFormatter();
-        });
     
     app.UseMetricServer();
     app.UseHttpMetrics();

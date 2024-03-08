@@ -18,3 +18,5 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8.0\AspNetNetwork.Database.GroupEvent.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8.0\ref\AspNetNetwork.Database.GroupEvent.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8.0\AspNetNetwork.Database.GroupEvent.sourcelink.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\bin\Debug\net8.0\AspNetNetwork.Database.GroupEvent.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.GroupEvent\obj\Debug\net8.0\AspNetNetwork.Database.GroupEvent.genruntimeconfig.cache

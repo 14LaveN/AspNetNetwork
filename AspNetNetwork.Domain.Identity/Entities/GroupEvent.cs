@@ -42,6 +42,11 @@ public sealed class GroupEvent : Event
     public ICollection<Attendee>? Attendees { get; set; }
     
     /// <summary>
+    /// Gets the user identifier.
+    /// </summary>
+    public override Guid UserId { get; set; }
+
+    /// <summary>
     /// Add to group event attendee.
     /// </summary>
     /// <param name="groupEvent">The group event.</param>

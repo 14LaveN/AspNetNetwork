@@ -1,4 +1,5 @@
-﻿using AspNetNetwork.Domain.Common.Core.Abstractions;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using AspNetNetwork.Domain.Common.Core.Abstractions;
 using AspNetNetwork.Domain.Common.Core.Errors;
 using AspNetNetwork.Domain.Common.Core.Events;
 using AspNetNetwork.Domain.Common.Core.Primitives;
@@ -16,10 +17,9 @@ namespace AspNetNetwork.Domain.Identity.Entities;
 /// <summary>
 /// Represents the user entity.
 /// </summary>
-public sealed partial class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableEntity
+public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableEntity
 {
     public override string? PasswordHash { get; set; }
-    private string _passwordHash;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="User"/> class.
@@ -29,7 +29,7 @@ public sealed partial class User : IdentityUser<Guid>, IAuditableEntity, ISoftDe
     /// <param name="emailAddress">The user emailAddress instance.</param>
     /// <param name="passwordHash">The user password hash.</param>
     /// <param name="companyId">The company identifier.</param>
-    private User(
+    public User(
         FirstName firstName,
         LastName lastName,
         EmailAddress emailAddress,
@@ -45,9 +45,12 @@ public sealed partial class User : IdentityUser<Guid>, IAuditableEntity, ISoftDe
         LastName = lastName;
         EmailAddress = emailAddress;
         PasswordHash = passwordHash;
-        CompanyId = companyId;
+        //TODOCompanyId = companyId;
     }
 
+    private User() { }
+
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public Guid Id { get; set; }
     
     /// <summary>
@@ -98,7 +101,7 @@ public sealed partial class User : IdentityUser<Guid>, IAuditableEntity, ISoftDe
     /// <summary>
     /// Gets or sets company identifier.
     /// </summary>
-    public Guid CompanyId { get; }
+    //TODO public Guid CompanyId { get; }
 
     /// <summary>
     /// Gets the user full name.

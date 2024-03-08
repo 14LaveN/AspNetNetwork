@@ -16,3 +16,7 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\ref\AspNetNetwork.Database.Identity.dll
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.sourcelink.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Database.Common.dll
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Database.Common.pdb
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\bin\Debug\net8.0\AspNetNetwork.Database.Identity.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.Database.Identity\obj\Debug\net8.0\AspNetNetwork.Database.Identity.genruntimeconfig.cache

@@ -15,8 +15,8 @@ namespace AspNetNetwork.Events.Invitation.Queries.GetPendingInvitations
     internal sealed class GetPendingInvitationsQueryHandler
         : IQueryHandler<GetPendingInvitationsQuery, Maybe<PendingInvitationsListResponse>>
     {
-        private readonly BaseDbContext<Domain.Identity.Entities.Invitation> _invitationDbContext;
-        private readonly BaseDbContext<GroupEvent> _groupEventDbContext;
+        private readonly BaseDbContext _invitationDbContext;
+        private readonly BaseDbContext _groupEventDbContext;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GetPendingInvitationsQueryHandler"/> class.
@@ -25,8 +25,8 @@ namespace AspNetNetwork.Events.Invitation.Queries.GetPendingInvitations
         /// <param name="userDbContext">The users database context.</param>
         /// <param name="groupEventDbContext">The group events database context.</param>
         public GetPendingInvitationsQueryHandler(
-            BaseDbContext<GroupEvent> groupEventDbContext,
-            BaseDbContext<Domain.Identity.Entities.Invitation> invitationDbContext)
+            BaseDbContext groupEventDbContext,
+            BaseDbContext invitationDbContext)
         {
             _groupEventDbContext = groupEventDbContext;
             _invitationDbContext = invitationDbContext;

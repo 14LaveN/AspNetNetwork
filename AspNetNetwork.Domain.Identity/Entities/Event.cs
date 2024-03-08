@@ -5,6 +5,7 @@ using AspNetNetwork.Domain.Common.Core.Primitives.Result;
 using AspNetNetwork.Domain.Common.ValueObjects;
 using AspNetNetwork.Domain.Core.Utility;
 using AspNetNetwork.Domain.Identity.Enumerations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspNetNetwork.Domain.Identity.Entities;
 
@@ -50,7 +51,7 @@ public abstract class Event : AggregateRoot, IAuditableEntity, ISoftDeletableEnt
     /// <summary>
     /// Gets the user identifier.
     /// </summary>
-    public Guid UserId { get; private set; }
+    public virtual Guid UserId { get; set; }
 
     /// <summary>
     /// Gets the author.
@@ -65,6 +66,7 @@ public abstract class Event : AggregateRoot, IAuditableEntity, ISoftDeletableEnt
     /// <summary>
     /// Gets the category.
     /// </summary>
+    [NotMapped]
     public Category Category { get; private set; }
 
     /// <summary>

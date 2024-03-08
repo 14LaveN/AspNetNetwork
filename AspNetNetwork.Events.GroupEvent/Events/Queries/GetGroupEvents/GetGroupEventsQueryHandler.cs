@@ -16,14 +16,14 @@ namespace AspNetNetwork.Events.GroupEvent.Events.Queries.GetGroupEvents;
 /// </summary>
 internal sealed class GetGroupEventsQueryHandler : IQueryHandler<GetGroupEventsQuery, Maybe<PagedList<GroupEventResponse>>>
 {
-    private readonly IDbContext<Domain.Identity.Entities.GroupEvent> _dbContext;
+    private readonly IDbContext _dbContext;
     
     /// <summary>
     /// Initializes a new instance of the <see cref="GetGroupEventsQueryHandler"/> class.
     /// </summary>
     /// <param name="dbContext">The database context.</param>
     public GetGroupEventsQueryHandler(
-        IDbContext<Domain.Identity.Entities.GroupEvent> dbContext)
+        IDbContext dbContext)
     {
         _dbContext = dbContext;
     }

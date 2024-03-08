@@ -19,7 +19,7 @@ public sealed class IntegrationEventPublisher : IIntegrationEventPublisher
     {
         var connectionFactory = new ConnectionFactory
         {
-            Uri = new Uri(MessageBrokerSettings.AmqpLink!)
+            Uri = new Uri("amqps://dgpswpjt:tbQvnOh93n-sdqDMjXAjfB53OiShmOka@chimpanzee.rmq.cloudamqp.com/dgpswpjt")
         };
 
         var connection = await connectionFactory.CreateConnectionAsync();

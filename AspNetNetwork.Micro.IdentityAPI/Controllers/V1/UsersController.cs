@@ -24,7 +24,7 @@ namespace AspNetNetwork.Micro.IdentityAPI.Controllers.V1;
 public sealed class UsersController(
         ISender sender,
         IUserRepository userRepository)
-    : ApiController(sender, userRepository)
+    : ApiController(sender, userRepository, nameof(UsersController))
 {
     #region Commands.
     
@@ -60,7 +60,7 @@ public sealed class UsersController(
     /// <response code="200">OK.</response>
     /// <response code="401">Unauthorized.</response>
     /// <response code="500">Internal server error.</response>
-    [HttpPost(ApiRoutes.Users.Login)]
+    [HttpPost(ApiRoutes.Users.Register)]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ApiErrorResponse), StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> Register([FromBody] RegisterRequest request) =>
@@ -86,7 +86,7 @@ public sealed class UsersController(
     /// <response code="200">OK.</response>
     /// <response code="400">Bad request.</response>
     /// <response code="500">Internal server error.</response>
-    [HttpPost(ApiRoutes.Users.Login)]
+    [HttpPost(ApiRoutes.Users.ChangePassword)]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ApiErrorResponse), StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> ChangePassword([FromBody] string password) =>

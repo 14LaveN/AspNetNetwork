@@ -12,7 +12,7 @@ using Quartz.Spi;
 
 namespace AspNetNetwork.BackgroundTasks;
 
-public static class DependencyInjection
+public static class BDependencyInjection
 {
     /// <summary>
     /// Registers the necessary services with the DI framework.
@@ -29,13 +29,13 @@ public static class DependencyInjection
 
         services.Configure<BackgroundTaskSettings>(configuration.GetSection(BackgroundTaskSettings.SettingsKey));
 
-        services.AddHostedService<GroupEventNotificationsProducerBackgroundService>();
-
-        services.AddHostedService<PersonalEventNotificationsProducerBackgroundService>();
-
-        services.AddHostedService<EmailNotificationConsumerBackgroundService>();
-
-        services.AddHostedService<IntegrationEventConsumerBackgroundService>();
+        //TODO services.AddHostedService<GroupEventNotificationsProducerBackgroundService>();
+//TODO 
+        //TODO services.AddHostedService<PersonalEventNotificationsProducerBackgroundService>();
+//TODO 
+        //TODO services.AddHostedService<EmailNotificationConsumerBackgroundService>();
+//TODO 
+        //TODO services.AddHostedService<IntegrationEventConsumerBackgroundService>();
 
 
         services.AddScoped<IPersonalEventNotificationsProducer, PersonalEventNotificationsProducer>();
@@ -52,8 +52,12 @@ public static class DependencyInjection
             
             return scheduler;
         });
-        services.AddTransient<AbstractScheduler<UserDbJob>>();
+        services.AddTransient<UserDbScheduler>();
+        services.AddTransient<MessageDbScheduler>();
         services.AddTransient<SaveMetricsScheduler>();
+        
+        var scheduler = new SaveMetricsScheduler();
+        scheduler.Start(services);
         
         return services;
     }

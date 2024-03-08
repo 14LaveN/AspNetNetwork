@@ -20,7 +20,7 @@ namespace AspNetNetwork.Micro.MessagingAPI.Controllers.V1;
 public sealed class MessagesController(
         ISender sender,
         IUserRepository userRepository)
-    : ApiController(sender, userRepository)
+    : ApiController(sender, userRepository, nameof(MessagesController))
 {
     /// <summary>
     /// Create message.

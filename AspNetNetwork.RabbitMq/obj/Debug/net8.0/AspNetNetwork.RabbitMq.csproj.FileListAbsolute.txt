@@ -34,3 +34,5 @@ G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNe
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Database.Invitation.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.Domain.Message.pdb
 G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\obj\Debug\net8.0\AspNetNetwork.RabbitMq.sourcelink.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\bin\Debug\net8.0\AspNetNetwork.RabbitMq.runtimeconfig.json
+G:\DotNetProjects\AspNetNetwork\AspNetNetwork.RabbitMq\obj\Debug\net8.0\AspNetNetwork.RabbitMq.genruntimeconfig.cache

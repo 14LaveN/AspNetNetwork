@@ -26,7 +26,6 @@ namespace AspNetNetwork.Micro.MessagingAPI.Mediatr.Commands.CreateMessage;
 public sealed class CreateMessageCommandHandler 
     : ICommandHandler<CreateMessageCommand, IBaseResponse<Result>>
 {
-    
     private readonly IMessagesRepository _messagesRepository;
     private readonly ILogger<CreateMessageCommandHandler> _logger;
     private readonly IUserIdentifierProvider _userIdentifierProvider;

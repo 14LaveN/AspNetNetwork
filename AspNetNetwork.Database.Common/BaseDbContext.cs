@@ -36,8 +36,6 @@ public class BaseDbContext
         _mediator = mediator;
     }
 
-
-
     /// <param name="dbContextOptions"></param>
     /// <inheritdoc />
     public BaseDbContext(DbContextOptions<BaseDbContext> dbContextOptions)
@@ -113,42 +111,42 @@ public class BaseDbContext
         => Database.ExecuteSqlRawAsync(sql, parameters, cancellationToken);
     
    /// <summary>
-        /// Saves all of the pending changes in the unit of work.
-        /// </summary>
-        /// <param name="cancellationToken">The cancellation token.</param>
-        /// <returns>The number of entities that have been saved.</returns>
-        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+   /// Saves all of the pending changes in the unit of work.
+   /// </summary>
+   /// <param name="cancellationToken">The cancellation token.</param>
+   /// <returns>The number of entities that have been saved.</returns>
+   public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+   {
+       DateTime utcNow = DateTime.UtcNow;
+
+       UpdateAuditableEntities(utcNow);
+
+       UpdateSoftDeletableEntities(utcNow);
+
+       await PublishDomainEvents(cancellationToken);
+
+       return await base.SaveChangesAsync(cancellationToken);
+    }
+
+    /// <summary>
+    /// Updates the entities implementing <see cref="IAuditableEntity"/> interface.
+    /// </summary>
+    /// <param name="utcNow">The current date and time in UTC format.</param>
+    private void UpdateAuditableEntities(DateTime utcNow)
+    {
+        foreach (EntityEntry<IAuditableEntity> entityEntry in ChangeTracker.Entries<IAuditableEntity>())
         {
-            DateTime utcNow = DateTime.UtcNow;
-
-            UpdateAuditableEntities(utcNow);
-
-            UpdateSoftDeletableEntities(utcNow);
-
-            await PublishDomainEvents(cancellationToken);
-
-            return await base.SaveChangesAsync(cancellationToken);
-        }
-
-        /// <summary>
-        /// Updates the entities implementing <see cref="IAuditableEntity"/> interface.
-        /// </summary>
-        /// <param name="utcNow">The current date and time in UTC format.</param>
-        private void UpdateAuditableEntities(DateTime utcNow)
-        {
-            foreach (EntityEntry<IAuditableEntity> entityEntry in ChangeTracker.Entries<IAuditableEntity>())
+            if (entityEntry.State == EntityState.Added)
             {
-                if (entityEntry.State == EntityState.Added)
-                {
-                    entityEntry.Property(nameof(IAuditableEntity.CreatedOnUtc)).CurrentValue = utcNow;
-                }
+                entityEntry.Property(nameof(IAuditableEntity.CreatedOnUtc)).CurrentValue = utcNow;
+            }
 
-                if (entityEntry.State == EntityState.Modified)
-                {
-                    entityEntry.Property(nameof(IAuditableEntity.ModifiedOnUtc)).CurrentValue = utcNow;
-                }
+            if (entityEntry.State == EntityState.Modified)
+            {
+                entityEntry.Property(nameof(IAuditableEntity.ModifiedOnUtc)).CurrentValue = utcNow;
             }
         }
+    }
 
         /// <summary>
         /// Updates the entities implementing <see cref="ISoftDeletableEntity"/> interface.
@@ -208,7 +206,8 @@ public class BaseDbContext
                 .Where(entityEntry => entityEntry.Entity.DomainEvents.Any())
                 .ToList();
 
-            List<IDomainEvent> domainEvents = aggregateRoots.SelectMany(entityEntry => entityEntry.Entity.DomainEvents).ToList();
+            List<IDomainEvent> domainEvents = aggregateRoots
+                .SelectMany(entityEntry => entityEntry.Entity.DomainEvents).ToList();
 
             aggregateRoots.ForEach(entityEntry => entityEntry.Entity.ClearDomainEvents());
 

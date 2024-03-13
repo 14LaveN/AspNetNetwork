@@ -18,6 +18,7 @@ internal sealed class PersonalEventConfiguration : IEntityTypeConfiguration<Doma
         builder.Property(personalEvent => personalEvent.Processed)
             .IsRequired()
             .HasDefaultValue(false);
+        
         builder.OwnsOne(user => user.Name, firstNameBuilder =>
         {
             firstNameBuilder.WithOwner();

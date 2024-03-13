@@ -29,16 +29,11 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
         //TODO     new EmailAddress("dfsdfsdfdsf"),
         //TODO     "Sdfdsf_2008",
         //TODO     Guid.Empty));
-        //TODO 
+        
         builder.HasKey(user => user.Id);
 
         builder.Property(x => x.Id)
             .ValueGeneratedOnAdd();
-
-        //TODO builder.HasOne(x => x.Company)
-        //TODO     .WithMany(x => x.Users)
-        //TODO     .HasForeignKey(x => x.CompanyId)
-        //TODO     .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasMany(x => x.YourGroupEvents)
             .WithOne(x => x.Author)
@@ -75,11 +70,6 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
                 .HasMaxLength(EmailAddress.MaxLength)
                 .IsRequired();
         });
-
-        //TODO builder.Property(x => x.CompanyId)
-        //TODO    .HasField("CompanyId")
-        //TODO    .HasColumnName("CompanyId")
-        //TODO    .HasDefaultValue(Guid.Empty);
 
         builder.Property(user => user.CreatedOnUtc).IsRequired();
 

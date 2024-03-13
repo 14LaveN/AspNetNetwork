@@ -40,7 +40,6 @@ internal sealed class UserTransactionBehavior<TRequest, TResponse>
             TResponse response = await next();
 
             await transaction.CommitAsync(cancellationToken);
-
             await _unitOfWork.SaveChangesAsync(cancellationToken);
 
             return response;

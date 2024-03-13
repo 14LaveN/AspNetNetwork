@@ -39,6 +39,10 @@ builder.Services.AddSwachbackleService(Assembly.GetExecutingAssembly(), "Identit
 
 builder.Services.AddApplication();
 
+builder.Services.AddCaching();
+
+//TODO builder.Services.AddLoggingExtension(builder.Configuration);
+
 builder.Services.AddAuthorizationExtension(builder.Configuration);
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(corsPolicyBuilder =>

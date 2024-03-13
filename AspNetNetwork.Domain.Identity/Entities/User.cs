@@ -28,13 +28,11 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// <param name="lastName">The user last name.</param>
     /// <param name="emailAddress">The user emailAddress instance.</param>
     /// <param name="passwordHash">The user password hash.</param>
-    /// <param name="companyId">The company identifier.</param>
     public User(
         FirstName firstName,
         LastName lastName,
         EmailAddress emailAddress,
-        string passwordHash,
-        Guid companyId)
+        string passwordHash)
     {
         Ensure.NotEmpty(firstName, "The first name is required.", nameof(firstName));
         Ensure.NotEmpty(lastName, "The last name is required.", nameof(lastName));
@@ -45,13 +43,13 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
         LastName = lastName;
         EmailAddress = emailAddress;
         PasswordHash = passwordHash;
-        //TODOCompanyId = companyId;
     }
 
+    /// <inheritdoc />
     private User() { }
 
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public Guid Id { get; set; }
+    public override Guid Id { get; set; }
     
     /// <summary>
     /// Gets or sets author messages.
@@ -97,11 +95,6 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// Navigation field.
     /// </summary>
     public ICollection<PersonalEvent> PersonalEvents { get; set; }
-    
-    /// <summary>
-    /// Gets or sets company identifier.
-    /// </summary>
-    //TODO public Guid CompanyId { get; }
 
     /// <summary>
     /// Gets the user full name.
@@ -125,9 +118,12 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// <inheritdoc />
     public bool Deleted { get; }
 
-    /// <inheritdoc />
+    /// <inheritdoc cref="RefreshToken" />
     public string? RefreshToken { get; set; }
 
+    /// <summary>
+    /// The domain events.
+    /// </summary>
     private readonly List<IDomainEvent> _domainEvents = new();
 
     /// <summary>
@@ -135,6 +131,9 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// </summary>
     public IReadOnlyCollection<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();
 
+    /// <summary>
+    /// Gets or sets first name.
+    /// </summary>
     public string? Firstname { get; set; }
 
     /// <summary>
@@ -155,16 +154,14 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     /// <param name="lastName">The last name.</param>
     /// <param name="emailAddress">The emailAddress.</param>
     /// <param name="passwordHash">The password hash.</param>
-    /// <param name="companyId">The company identifier.</param>
     /// <returns>The newly created user instance.</returns>
     public static User Create(
         FirstName firstName,
         LastName lastName,
         EmailAddress emailAddress,
-        string passwordHash,
-        Guid companyId)
+        string passwordHash)
     {
-        var user = new User(firstName, lastName, emailAddress, passwordHash, companyId);
+        var user = new User(firstName, lastName, emailAddress, passwordHash);
         
         user.AddDomainEvent(new UserCreatedDomainEvent(user));
 

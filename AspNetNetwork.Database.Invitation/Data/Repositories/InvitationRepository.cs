@@ -24,7 +24,7 @@ internal sealed class InvitationRepository : GenericRepository<Domain.Identity.E
 
     /// <inheritdoc />
     public async Task<Result<Domain.Identity.Entities.Invitation>> InviteAsync(
-        Domain.Identity.Entities.GroupEvent groupEvent,
+        GroupEvent groupEvent,
         User user)
     {
         if (await CheckIfInvitationAlreadySentAsync(groupEvent, user))
@@ -41,11 +41,11 @@ internal sealed class InvitationRepository : GenericRepository<Domain.Identity.E
 
 
     /// <inheritdoc />
-    public async Task<bool> CheckIfInvitationAlreadySentAsync(Domain.Identity.Entities.GroupEvent groupEvent, User user) =>
+    public async Task<bool> CheckIfInvitationAlreadySentAsync(GroupEvent groupEvent, User user) =>
         await AnyAsync(new PendingInvitationSpecification(groupEvent, user));
 
     /// <inheritdoc />
-    public async Task RemoveInvitationsForGroupEventAsync(Domain.Identity.Entities.GroupEvent groupEvent, DateTime utcNow)
+    public async Task RemoveInvitationsForGroupEventAsync(GroupEvent groupEvent, DateTime utcNow)
     {
         const string sql = @"
                 UPDATE Invitation

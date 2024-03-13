@@ -14,7 +14,8 @@ internal sealed class EmailNotificationService : IEmailNotificationService
     /// Initializes a new instance of the <see cref="EmailNotificationService"/> class.
     /// </summary>
     /// <param name="emailService">The email service.</param>
-    public EmailNotificationService(IEmailService emailService) => _emailService = emailService;
+    public EmailNotificationService(IEmailService emailService) => 
+        _emailService = emailService;
 
     /// <inheritdoc />
     public async Task SendWelcomeEmail(WelcomeEmail welcomeEmail)

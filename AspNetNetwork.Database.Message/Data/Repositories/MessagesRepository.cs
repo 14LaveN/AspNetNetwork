@@ -26,7 +26,7 @@ public sealed class MessagesRepository
     public new async Task Remove(Domain.Identity.Entities.Message message)
     {
         await DbContext.Set<Domain.Identity.Entities.Message>()
-            .Where(x=>x.Id == message.Id)
+            .Where(x=> x.Id == message.Id)
             .ExecuteDeleteAsync();
     }
 

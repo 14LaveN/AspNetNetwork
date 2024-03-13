@@ -49,7 +49,7 @@ public sealed class RegisterCommandHandler(ILogger<RegisterCommandHandler> logge
                 throw new NotFoundException(nameof(user), "User with the same name");
             }
 
-            user = User.Create(firstNameResult.Value, lastNameResult.Value, emailResult.Value, passwordResult.Value, Guid.Empty);
+            user = User.Create(firstNameResult.Value, lastNameResult.Value, emailResult.Value, passwordResult.Value);
             
             var result = await userManager.CreateAsync(user, request.Password);
             
